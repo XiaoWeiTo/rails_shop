@@ -1,0 +1,17 @@
+<h1 class="text-center">Login</h1>
+
+<%= form_with url:sessions_path,method: :post do |form| %>
+    <div class="mb-3">
+        <%= form.label "邮箱",class:"form-label" %><br/>
+        <%= form.email_field :email,class:"form-control" %>
+    </div>
+
+    <div class="mb-3">
+        <%= form.label "密码",class:"form-label"  %><br/>
+        <%= form.password_field :password,class:"form-control" %>
+    </div>
+
+    <div class="mb-3 d-flex justify-content-center">
+        <%= form.submit "登录",class:"btn btn-success btn-lg" %>
+    </div>
+<% end %>

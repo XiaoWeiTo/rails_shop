@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">小魏商城</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">首页</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <% unless logged_in? %>
+            <li class="nav-item">
+            <%= link_to "注册",new_user_path,class:"nav-link" %>
+            </li>
+            <li class="nav-item">
+                <%= link_to "登录",new_session_path,class:"nav-link" %>
+            </li>
+        <% else %>
+            <li class="nav-item">
+                <a class="nav-link" href="#">欢迎你,<%= current_user.username %></a>
+                
+            </li>
+            <li class="nav-item">
+                <%= link_to "退出",session_url(current_user),class:"nav-link",
+                        data:{ turbo_method: :delete,turbo_confirm: "确认退出？"},method: :delete%>
+            </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</nav>

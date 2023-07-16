@@ -1,0 +1,1815 @@
+Started GET "/" for ::1 at 2023-07-11 23:59:57 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 488)
+  Rendered layout layouts/application.html.erb (Duration: 801.1ms | Allocations: 74678)
+Completed 500 Internal Server Error in 873ms (ActiveRecord: 0.0ms | Allocations: 82122)
+
+
+  
+ActionView::Template::Error (Permission denied @ rb_file_s_rename - (D:/rails/shop/tmp/cache/assets/sprockets/v4.0.0/EB/EB8dP3eJBN0QajyELJEr9Xe97QITJqhpMly4dB6GotE.cache.21140.420.711322, D:/rails/shop/tmp/cache/assets/sprockets/v4.0.0/EB/EB8dP3eJBN0QajyELJEr9Xe97QITJqhpMly4dB6GotE.cache)):
+  
+sprockets (4.2.0) lib/sprockets/path_utils.rb:362:in `rename'
+sprockets (4.2.0) lib/sprockets/path_utils.rb:362:in `atomic_write'
+sprockets (4.2.0) lib/sprockets/cache/file_store.rb:112:in `set'
+sprockets (4.2.0) lib/sprockets/cache.rb:227:in `set'
+sprockets (4.2.0) lib/sprockets/cache.rb:143:in `set'
+sprockets (4.2.0) lib/sprockets/loader.rb:266:in `store_asset'
+sprockets (4.2.0) lib/sprockets/loader.rb:226:in `load_from_unloaded'
+sprockets (4.2.0) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.2.0) lib/sprockets/loader.rb:337:in `fetch_asset_from_dependency_cache'
+sprockets (4.2.0) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.2.0) lib/sprockets/cached_environment.rb:44:in `block in load'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:207:in `block in fetch_or_store'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:187:in `fetch'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:206:in `fetch_or_store'
+sprockets (4.2.0) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.2.0) lib/sprockets/base.rb:81:in `find_asset'
+sprockets (4.2.0) lib/sprockets/base.rb:88:in `find_all_linked_assets'
+sprockets (4.2.0) lib/sprockets/manifest.rb:125:in `each'
+sprockets (4.2.0) lib/sprockets/manifest.rb:125:in `to_a'
+sprockets (4.2.0) lib/sprockets/manifest.rb:125:in `block (2 levels) in find'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:24:in `block in execute'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `block in synchronize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `synchronize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `synchronize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:22:in `execute'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/promise.rb:564:in `block in realize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:352:in `run_task'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:343:in `block (3 levels) in create_worker'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `loop'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `block (2 levels) in create_worker'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `catch'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `block in create_worker'
+Started GET "/" for ::1 at 2023-07-12 00:00:36 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 41.6ms | Allocations: 27327)
+Completed 200 OK in 44ms (Views: 42.7ms | ActiveRecord: 0.0ms | Allocations: 27683)
+
+
+Started GET "/" for ::1 at 2023-07-12 00:28:37 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 45.7ms | Allocations: 3956)
+Completed 500 Internal Server Error in 49ms (Allocations: 4569)
+
+
+  
+LoadError (cannot load such file -- sassc):
+  
+app/views/layouts/application.html.erb:9
+Started GET "/" for ::1 at 2023-07-12 00:29:32 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 359)
+  Rendered layout layouts/application.html.erb (Duration: 2563.4ms | Allocations: 132627)
+Completed 500 Internal Server Error in 2591ms (ActiveRecord: 0.0ms | Allocations: 137104)
+
+
+  
+ActionView::Template::Error (Permission denied @ rb_file_s_rename - (D:/rails/shop/tmp/cache/assets/sprockets/v4.0.0/8p/8pCUmbszbteXsI229SDkWmyE0EX0TykbFl75QTlmW3Y.cache.22960.18380.150610, D:/rails/shop/tmp/cache/assets/sprockets/v4.0.0/8p/8pCUmbszbteXsI229SDkWmyE0EX0TykbFl75QTlmW3Y.cache)):
+  
+sprockets (4.2.0) lib/sprockets/path_utils.rb:362:in `rename'
+sprockets (4.2.0) lib/sprockets/path_utils.rb:362:in `atomic_write'
+sprockets (4.2.0) lib/sprockets/cache/file_store.rb:112:in `set'
+sprockets (4.2.0) lib/sprockets/cache.rb:227:in `set'
+sprockets (4.2.0) lib/sprockets/cache.rb:143:in `set'
+sprockets (4.2.0) lib/sprockets/loader.rb:263:in `store_asset'
+sprockets (4.2.0) lib/sprockets/loader.rb:226:in `load_from_unloaded'
+sprockets (4.2.0) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.2.0) lib/sprockets/loader.rb:337:in `fetch_asset_from_dependency_cache'
+sprockets (4.2.0) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.2.0) lib/sprockets/cached_environment.rb:44:in `block in load'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:207:in `block in fetch_or_store'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:187:in `fetch'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:206:in `fetch_or_store'
+sprockets (4.2.0) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.2.0) lib/sprockets/context.rb:117:in `load'
+sprockets (4.2.0) lib/sprockets/context.rb:145:in `depend_on_asset'
+sprockets (4.2.0) lib/sprockets/context.rb:185:in `link_asset'
+sprockets-rails (3.4.2) lib/sprockets/rails/context.rb:27:in `compute_asset_path'
+actionview (7.0.6) lib/action_view/helpers/asset_url_helper.rb:203:in `asset_path'
+sprockets-rails (3.4.2) lib/sprockets/rails/sourcemapping_url_processor.rb:41:in `sourcemap_asset_path'
+sprockets-rails (3.4.2) lib/sprockets/rails/sourcemapping_url_processor.rb:34:in `resolved_sourcemap_comment'
+sprockets-rails (3.4.2) lib/sprockets/rails/sourcemapping_url_processor.rb:15:in `block in call'
+sprockets-rails (3.4.2) lib/sprockets/rails/sourcemapping_url_processor.rb:11:in `gsub'
+sprockets-rails (3.4.2) lib/sprockets/rails/sourcemapping_url_processor.rb:11:in `call'
+sprockets (4.2.0) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.2.0) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.2.0) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.2.0) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.2.0) lib/sprockets/loader.rb:182:in `load_from_unloaded'
+sprockets (4.2.0) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.2.0) lib/sprockets/loader.rb:337:in `fetch_asset_from_dependency_cache'
+sprockets (4.2.0) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.2.0) lib/sprockets/cached_environment.rb:44:in `block in load'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:207:in `block in fetch_or_store'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:187:in `fetch'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:206:in `fetch_or_store'
+sprockets (4.2.0) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.2.0) lib/sprockets/bundle.rb:27:in `call'
+sprockets (4.2.0) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.2.0) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.2.0) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.2.0) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.2.0) lib/sprockets/loader.rb:182:in `load_from_unloaded'
+sprockets (4.2.0) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.2.0) lib/sprockets/loader.rb:337:in `fetch_asset_from_dependency_cache'
+sprockets (4.2.0) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.2.0) lib/sprockets/cached_environment.rb:44:in `block in load'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:207:in `block in fetch_or_store'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:187:in `fetch'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:206:in `fetch_or_store'
+sprockets (4.2.0) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.2.0) lib/sprockets/base.rb:81:in `find_asset'
+sprockets (4.2.0) lib/sprockets/base.rb:88:in `find_all_linked_assets'
+sprockets (4.2.0) lib/sprockets/manifest.rb:125:in `each'
+sprockets (4.2.0) lib/sprockets/manifest.rb:125:in `to_a'
+sprockets (4.2.0) lib/sprockets/manifest.rb:125:in `block (2 levels) in find'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:24:in `block in execute'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `block in synchronize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `synchronize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `synchronize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:22:in `execute'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/promise.rb:564:in `block in realize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:352:in `run_task'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:343:in `block (3 levels) in create_worker'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `loop'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `block (2 levels) in create_worker'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `catch'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `block in create_worker'
+Started GET "/" for ::1 at 2023-07-12 00:30:21 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 90.5ms | Allocations: 42505)
+Completed 200 OK in 93ms (Views: 91.6ms | ActiveRecord: 0.0ms | Allocations: 42868)
+
+
+Started GET "/" for ::1 at 2023-07-12 00:31:20 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 23.6ms | Allocations: 7006)
+Completed 200 OK in 31ms (Views: 28.9ms | ActiveRecord: 0.0ms | Allocations: 7928)
+
+
+Started GET "/" for ::1 at 2023-07-12 00:31:51 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 144)
+  Rendered layout layouts/application.html.erb (Duration: 24.0ms | Allocations: 7011)
+Completed 200 OK in 32ms (Views: 29.3ms | ActiveRecord: 0.0ms | Allocations: 7949)
+
+
+Started GET "/" for ::1 at 2023-07-12 00:32:13 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 31.1ms | Allocations: 9530)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms | Allocations: 9814)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery3' with type 'application/javascript'
+Checked in these paths: 
+  D:/rails/shop/app/assets/config
+  D:/rails/shop/app/assets/images
+  D:/rails/shop/app/assets/stylesheets
+  D:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/stimulus-rails-1.2.1/app/assets/javascripts
+  D:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/turbo-rails-1.4.0/app/assets/javascripts
+  D:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/importmap-rails-1.2.1/app/assets/javascripts
+  D:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/actiontext-7.0.6/app/assets/javascripts
+  D:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/actiontext-7.0.6/app/assets/stylesheets
+  D:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/actioncable-7.0.6/app/assets/javascripts
+  D:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/activestorage-7.0.6/app/assets/javascripts
+  D:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/actionview-7.0.6/lib/assets/compiled
+  D:/rails/shop/app/javascript
+  D:/rails/shop/vendor/javascript
+  D:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/popper_js-2.11.7/assets/javascripts
+  D:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/bootstrap-5.2.3/assets/stylesheets
+  D:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/bootstrap-5.2.3/assets/javascripts):
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_importmap_tags %>
+    11:   </head>
+    12: 
+    13:   <body>
+  
+app/javascript/application.js:2
+app/views/layouts/application.html.erb:10
+Started GET "/" for ::1 at 2023-07-12 00:35:15 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 379)
+  Rendered layout layouts/application.html.erb (Duration: 2478.0ms | Allocations: 205677)
+Completed 500 Internal Server Error in 2505ms (ActiveRecord: 0.0ms | Allocations: 210154)
+
+
+  
+ActionView::Template::Error (Permission denied @ rb_file_s_rename - (D:/rails/shop/tmp/cache/assets/sprockets/v4.0.0/Ua/UaomEbJYYV4lQK2aXRRw4hT3feCaxWgVGlmiF9620v8.cache.23660.16040.657012, D:/rails/shop/tmp/cache/assets/sprockets/v4.0.0/Ua/UaomEbJYYV4lQK2aXRRw4hT3feCaxWgVGlmiF9620v8.cache)):
+  
+sprockets (4.2.0) lib/sprockets/path_utils.rb:362:in `rename'
+sprockets (4.2.0) lib/sprockets/path_utils.rb:362:in `atomic_write'
+sprockets (4.2.0) lib/sprockets/cache/file_store.rb:112:in `set'
+sprockets (4.2.0) lib/sprockets/cache.rb:227:in `set'
+sprockets (4.2.0) lib/sprockets/cache.rb:143:in `set'
+sprockets (4.2.0) lib/sprockets/loader.rb:266:in `store_asset'
+sprockets (4.2.0) lib/sprockets/loader.rb:226:in `load_from_unloaded'
+sprockets (4.2.0) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.2.0) lib/sprockets/loader.rb:337:in `fetch_asset_from_dependency_cache'
+sprockets (4.2.0) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.2.0) lib/sprockets/cached_environment.rb:44:in `block in load'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:207:in `block in fetch_or_store'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:187:in `fetch'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:206:in `fetch_or_store'
+sprockets (4.2.0) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.2.0) lib/sprockets/bundle.rb:27:in `call'
+sprockets (4.2.0) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.2.0) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.2.0) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.2.0) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.2.0) lib/sprockets/loader.rb:182:in `load_from_unloaded'
+sprockets (4.2.0) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.2.0) lib/sprockets/loader.rb:337:in `fetch_asset_from_dependency_cache'
+sprockets (4.2.0) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.2.0) lib/sprockets/cached_environment.rb:44:in `block in load'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:207:in `block in fetch_or_store'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:187:in `fetch'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:206:in `fetch_or_store'
+sprockets (4.2.0) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.2.0) lib/sprockets/bundle.rb:32:in `block in call'
+D:/Ruby31-x64/lib/ruby/3.1.0/set.rb:511:in `each_key'
+D:/Ruby31-x64/lib/ruby/3.1.0/set.rb:511:in `each'
+sprockets (4.2.0) lib/sprockets/bundle.rb:31:in `call'
+sprockets (4.2.0) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.2.0) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.2.0) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.2.0) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.2.0) lib/sprockets/loader.rb:182:in `load_from_unloaded'
+sprockets (4.2.0) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.2.0) lib/sprockets/loader.rb:337:in `fetch_asset_from_dependency_cache'
+sprockets (4.2.0) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.2.0) lib/sprockets/cached_environment.rb:44:in `block in load'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:207:in `block in fetch_or_store'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:187:in `fetch'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/map.rb:206:in `fetch_or_store'
+sprockets (4.2.0) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.2.0) lib/sprockets/base.rb:81:in `find_asset'
+sprockets (4.2.0) lib/sprockets/base.rb:88:in `find_all_linked_assets'
+sprockets (4.2.0) lib/sprockets/manifest.rb:125:in `each'
+sprockets (4.2.0) lib/sprockets/manifest.rb:125:in `to_a'
+sprockets (4.2.0) lib/sprockets/manifest.rb:125:in `block (2 levels) in find'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:24:in `block in execute'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `block in synchronize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `synchronize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `synchronize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:22:in `execute'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/promise.rb:564:in `block in realize'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:352:in `run_task'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:343:in `block (3 levels) in create_worker'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `loop'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:334:in `block (2 levels) in create_worker'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `catch'
+concurrent-ruby (1.2.2) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:333:in `block in create_worker'
+Started GET "/" for ::1 at 2023-07-12 00:35:49 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 102.5ms | Allocations: 50914)
+Completed 200 OK in 106ms (Views: 104.7ms | ActiveRecord: 0.0ms | Allocations: 51277)
+
+
+DEPRECATION WARNING: ActiveRecord::Base.timestamped_migrations is deprecated and will be removed in Rails 7.1.
+Use `ActiveRecord.timestamped_migrations` instead.
+ (called from <main> at bin/rails:4)
+DEPRECATION WARNING: ActiveRecord::Base.timestamped_migrations is deprecated and will be removed in Rails 7.1.
+Use `ActiveRecord.timestamped_migrations` instead.
+ (called from <main> at bin/rails:4)
+DEPRECATION WARNING: ActiveRecord::Base.timestamped_migrations is deprecated and will be removed in Rails 7.1.
+Use `ActiveRecord.timestamped_migrations` instead.
+ (called from <main> at bin/rails:4)
+DEPRECATION WARNING: ActiveRecord::Base.timestamped_migrations is deprecated and will be removed in Rails 7.1.
+Use `ActiveRecord.timestamped_migrations` instead.
+ (called from <main> at bin/rails:4)
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to SorceryCore (20230712144633)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar NOT NULL, "crypted_password" varchar, "salt" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230712144633"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to SorceryUserActivation (20230715005916)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "users" ADD "activation_state" varchar DEFAULT NULL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "activation_token" varchar DEFAULT NULL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "activation_token_expires_at" datetime(6) DEFAULT NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_users_on_activation_token" ON "users" ("activation_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230715005916"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to SorceryRememberMe (20230715005917)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "users" ADD "remember_me_token" varchar DEFAULT NULL[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "remember_me_token_expires_at" datetime(6) DEFAULT NULL[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_users_on_remember_me_token" ON "users" ("remember_me_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230715005917"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to SorceryResetPassword (20230715005918)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_password_token" varchar DEFAULT NULL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_password_token_expires_at" datetime(6) DEFAULT NULL[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_password_email_sent_at" datetime(6) DEFAULT NULL[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "access_count_to_reset_password_page" integer DEFAULT 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230715005918"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-07-15 01:02:41.947676"], ["updated_at", "2023-07-15 01:02:41.947676"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2023-07-15 10:37:47 +0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 379)
+  Rendered layout layouts/application.html.erb (Duration: 241.7ms | Allocations: 57398)
+Completed 200 OK in 274ms (Views: 252.3ms | ActiveRecord: 0.0ms | Allocations: 61928)
+
+
+Started GET "/users/new" for ::1 at 2023-07-15 10:38:03 +0800
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2510)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 2606)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 3390)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass
+
+'.freeze; unless @user.errors.empty? 
+                      ^^^^^^^):
+    1: <h1>Create new user</h1>
+    2: <% unless @user.errors.empty? %>
+    3:     <div class="alert alert-danger" role="alert">
+    4:         <ul>
+    5:             <% @user.errors.mesages.values.flatten.each do |error| %>
+  
+app/views/users/new.html.erb:2
+Started GET "/" for ::1 at 2023-07-15 10:38:55 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 143)
+  Rendered layouts/_navigation.html.erb (Duration: 0.5ms | Allocations: 141)
+  Rendered layout layouts/application.html.erb (Duration: 28.5ms | Allocations: 7490)
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 0.0ms | Allocations: 8432)
+
+
+Started GET "/" for ::1 at 2023-07-15 10:39:28 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 143)
+  Rendered layouts/_navigation.html.erb (Duration: 0.5ms | Allocations: 139)
+  Rendered layout layouts/application.html.erb (Duration: 29.1ms | Allocations: 7413)
+Completed 200 OK in 36ms (Views: 34.2ms | ActiveRecord: 0.0ms | Allocations: 8350)
+
+
+Started GET "/" for ::1 at 2023-07-15 10:39:49 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 143)
+  Rendered layouts/_navigation.html.erb (Duration: 0.5ms | Allocations: 141)
+  Rendered layout layouts/application.html.erb (Duration: 27.0ms | Allocations: 7394)
+Completed 200 OK in 35ms (Views: 32.8ms | ActiveRecord: 0.0ms | Allocations: 8341)
+
+
+Started GET "/" for ::1 at 2023-07-15 10:40:21 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 143)
+  Rendered layouts/_navigation.html.erb (Duration: 0.5ms | Allocations: 140)
+  Rendered layout layouts/application.html.erb (Duration: 28.6ms | Allocations: 7390)
+Completed 200 OK in 36ms (Views: 33.8ms | ActiveRecord: 0.0ms | Allocations: 8327)
+
+
+Started GET "/" for ::1 at 2023-07-15 10:41:11 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 143)
+  Rendered layouts/_navigation.html.erb (Duration: 0.5ms | Allocations: 139)
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | Allocations: 7383)
+Completed 200 OK in 34ms (Views: 31.8ms | ActiveRecord: 0.0ms | Allocations: 8320)
+
+
+Started GET "/" for ::1 at 2023-07-15 10:43:01 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 146)
+  Rendered layouts/_navigation.html.erb (Duration: 0.7ms | Allocations: 292)
+  Rendered layout layouts/application.html.erb (Duration: 27.4ms | Allocations: 7651)
+Completed 200 OK in 35ms (Views: 33.3ms | ActiveRecord: 0.0ms | Allocations: 8591)
+
+
+Started GET "/users/new" for ::1 at 2023-07-15 10:43:03 +0800
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 2133)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 2219)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 2863)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass
+
+'.freeze; unless @user.errors.empty? 
+                      ^^^^^^^):
+    1: <h1>Create new user</h1>
+    2: <% unless @user.errors.empty? %>
+    3:     <div class="alert alert-danger" role="alert">
+    4:         <ul>
+    5:             <% @user.errors.mesages.values.flatten.each do |error| %>
+  
+app/views/users/new.html.erb:2
+Started GET "/users/new" for ::1 at 2023-07-15 12:56:47 +0800
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 7.8ms | Allocations: 2133)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 2220)
+Completed 500 Internal Server Error in 28ms (Allocations: 3126)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass
+
+'.freeze; unless @user.errors.empty? 
+                      ^^^^^^^):
+    1: <h1>Create new user</h1>
+    2: <% unless @user.errors.empty? %>
+    3:     <div class="alert alert-danger" role="alert">
+    4:         <ul>
+    5:             <% @user.errors.mesages.values.flatten.each do |error| %>
+  
+app/views/users/new.html.erb:2
+Started GET "/users/new" for ::1 at 2023-07-15 12:58:08 +0800
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 11ms (Allocations: 1672)
+
+
+  
+ArgumentError (To use reset_password submodule, you must define a mailer (config.reset_password_mailer = YourMailerClass).):
+  
+app/models/user.rb:2:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/users_controller.rb:3:in `new'
+Started GET "/users/new" for ::1 at 2023-07-15 13:00:43 +0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 25.4ms | Allocations: 4105)
+  Rendered layouts/_navigation.html.erb (Duration: 0.7ms | Allocations: 246)
+  Rendered layout layouts/application.html.erb (Duration: 218.0ms | Allocations: 61129)
+Completed 200 OK in 363ms (Views: 227.2ms | ActiveRecord: 0.6ms | Allocations: 89171)
+
+
+Started GET "/users/new" for ::1 at 2023-07-15 13:01:58 +0800
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1751)
+  Rendered layouts/_navigation.html.erb (Duration: 0.6ms | Allocations: 210)
+  Rendered layout layouts/application.html.erb (Duration: 29.6ms | Allocations: 8929)
+Completed 200 OK in 44ms (Views: 42.0ms | ActiveRecord: 0.0ms | Allocations: 9947)
+
+
+Started GET "/users/new" for ::1 at 2023-07-15 13:28:05 +0800
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1758)
+  Rendered layouts/_navigation.html.erb (Duration: 1.1ms | Allocations: 209)
+  Rendered layout layouts/application.html.erb (Duration: 29.2ms | Allocations: 8874)
+Completed 200 OK in 37ms (Views: 34.9ms | Allocations: 9850)
+
+
+Started GET "/users/new" for ::1 at 2023-07-15 13:31:03 +0800
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1760)
+  Rendered layouts/_navigation.html.erb (Duration: 0.6ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 28.7ms | Allocations: 8888)
+Completed 200 OK in 36ms (Views: 34.0ms | Allocations: 9847)
+
+
+Started POST "/users" for ::1 at 2023-07-15 13:41:32 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"777@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"创建"}
+[31mUnpermitted parameter: :password_confirmation. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x0000016acd830980>, params: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"777@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"创建", "controller"=>"users", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "777@qq.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2529)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 2620)
+Completed 500 Internal Server Error in 66ms (ActiveRecord: 0.7ms | Allocations: 8157)
+
+
+  
+ActionView::Template::Error (undefined method `mesages' for #<ActiveModel::Errors [#<ActiveModel::Error attribute=password_confirmation, type=blank, options={:message=>"确认密码不能为空", :if=>:need_validate_password}>]>
+
+'.freeze;             @user.errors.mesages.values.flatten.each do |error| 
+                                  ^^^^^^^^
+Did you mean?  messages):
+    2: <% unless @user.errors.empty? %>
+    3:     <div class="alert alert-danger" role="alert">
+    4:         <ul>
+    5:             <% @user.errors.mesages.values.flatten.each do |error| %>
+    6:                 <li><%= error %></li>
+    7:             <% end %>
+    8:         </ul>
+  
+app/views/users/new.html.erb:5
+app/controllers/users_controller.rb:13:in `create'
+Started POST "/users" for ::1 at 2023-07-15 13:41:50 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"777@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"创建"}
+[31mUnpermitted parameter: :password_confirmation. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x0000016acdd005c8>, params: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"777@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"创建", "controller"=>"users", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "777@qq.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 2056)
+  Rendered layouts/_navigation.html.erb (Duration: 0.7ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 30.7ms | Allocations: 9217)
+Completed 200 OK in 96ms (Views: 37.2ms | ActiveRecord: 0.3ms | Allocations: 13169)
+
+
+Started POST "/users" for ::1 at 2023-07-15 13:41:56 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"创建"}
+[31mUnpermitted parameter: :password_confirmation. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x0000016ace1c3b50>, params: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"创建", "controller"=>"users", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2697)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered layout layouts/application.html.erb (Duration: 29.2ms | Allocations: 9244)
+Completed 200 OK in 44ms (Views: 31.5ms | ActiveRecord: 0.3ms | Allocations: 12496)
+
+
+Started POST "/users" for ::1 at 2023-07-15 13:44:15 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"创建"}
+[31mUnpermitted parameter: :password_confirmation. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x0000016aca0fe340>, params: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"创建", "controller"=>"users", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 3219)
+  Rendered layouts/_navigation.html.erb (Duration: 0.9ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 32.1ms | Allocations: 10283)
+Completed 200 OK in 47ms (Views: 38.9ms | ActiveRecord: 0.2ms | Allocations: 13934)
+
+
+Started POST "/users" for ::1 at 2023-07-15 13:44:28 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"创建"}
+[31mUnpermitted parameter: :password_confirmation. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x0000016ac9d441a0>, params: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"创建", "controller"=>"users", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 3216)
+  Rendered layouts/_navigation.html.erb (Duration: 0.6ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 30.2ms | Allocations: 10281)
+Completed 200 OK in 44ms (Views: 36.3ms | ActiveRecord: 0.3ms | Allocations: 14142)
+
+
+Started POST "/users" for ::1 at 2023-07-15 13:45:01 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"创建"}
+[31mUnpermitted parameter: :password_confirmation. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x0000016acdb2f7a8>, params: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"创建", "controller"=>"users", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 3216)
+  Rendered layouts/_navigation.html.erb (Duration: 0.7ms | Allocations: 208)
+  Rendered layout layouts/application.html.erb (Duration: 30.8ms | Allocations: 10358)
+Completed 200 OK in 46ms (Views: 37.0ms | ActiveRecord: 0.3ms | Allocations: 14237)
+
+
+Started POST "/users" for ::1 at 2023-07-15 13:45:16 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"2254351821@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"创建"}
+[31mUnpermitted parameter: :password_confirmation. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x0000016ace08db50>, params: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"2254351821@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"创建", "controller"=>"users", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "2254351821@qq.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 29.3ms | Allocations: 1851)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered layout layouts/application.html.erb (Duration: 58.3ms | Allocations: 8401)
+Completed 200 OK in 139ms (Views: 59.4ms | ActiveRecord: 0.4ms | Allocations: 11695)
+
+
+Started POST "/users" for ::1 at 2023-07-15 13:45:41 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"2254351821@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"创建"}
+[31mUnpermitted parameter: :password_confirmation. Context: { controller: UsersController, action: create, request: #<ActionDispatch::Request:0x0000016acad927f0>, params: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"2254351821@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"创建", "controller"=>"users", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "2254351821@qq.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1416)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered layout layouts/application.html.erb (Duration: 27.5ms | Allocations: 7958)
+Completed 200 OK in 84ms (Views: 28.6ms | ActiveRecord: 0.3ms | Allocations: 10982)
+
+
+Started POST "/users" for ::1 at 2023-07-15 13:46:32 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"2254351821@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"创建"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "2254351821@qq.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2051)
+  Rendered layouts/_navigation.html.erb (Duration: 0.8ms | Allocations: 211)
+  Rendered layout layouts/application.html.erb (Duration: 52.3ms | Allocations: 19521)
+Completed 200 OK in 128ms (Views: 58.5ms | ActiveRecord: 1.5ms | Allocations: 30478)
+
+
+Started POST "/users" for ::1 at 2023-07-15 13:46:44 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"2254351821@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"创建"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "2254351821@qq.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1414)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 48)
+  Rendered layout layouts/application.html.erb (Duration: 32.1ms | Allocations: 7870)
+Completed 200 OK in 88ms (Views: 33.2ms | ActiveRecord: 0.3ms | Allocations: 11106)
+
+
+Started POST "/users" for ::1 at 2023-07-15 13:47:08 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"2254351821@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"创建"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "2254351821@qq.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (1.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "crypted_password", "salt", "created_at", "updated_at", "activation_state", "activation_token", "activation_token_expires_at", "remember_me_token", "remember_me_token_expires_at", "reset_password_token", "reset_password_token_expires_at", "reset_password_email_sent_at", "access_count_to_reset_password_page") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "2254351821@qq.com"], ["crypted_password", "$2a$10$h38ntGtYEEnthyd9p7FDhueh8gVdeEe3FIhQZBTx2VVF2HNIzCIm."], ["salt", "kGnziav7oVhssajxdMXy"], ["created_at", "2023-07-15 05:47:08.869094"], ["updated_at", "2023-07-15 05:47:08.869094"], ["activation_state", "pending"], ["activation_token", "ut1soehx-w2AYyy3zxEi"], ["activation_token_expires_at", nil], ["remember_me_token", nil], ["remember_me_token_expires_at", nil], ["reset_password_token", nil], ["reset_password_token_expires_at", nil], ["reset_password_email_sent_at", nil], ["access_count_to_reset_password_page", 0]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 63ms (ActiveRecord: 3.4ms | Allocations: 4712)
+
+
+Started GET "/" for ::1 at 2023-07-15 13:47:08 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 146)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 94)
+  Rendered layout layouts/application.html.erb (Duration: 27.0ms | Allocations: 7139)
+Completed 200 OK in 34ms (Views: 31.8ms | ActiveRecord: 0.0ms | Allocations: 7935)
+
+
+Started GET "/" for ::1 at 2023-07-15 13:55:36 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 144)
+  Rendered layouts/_navigation.html.erb (Duration: 0.7ms | Allocations: 314)
+  Rendered layout layouts/application.html.erb (Duration: 45.3ms | Allocations: 17914)
+Completed 200 OK in 52ms (Views: 50.3ms | Allocations: 18967)
+
+
+Started GET "/sessions/new" for ::1 at 2023-07-15 13:55:40 +0800
+  
+ActionController::RoutingError (uninitialized constant SessionsController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  SessoinsController
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/sessions/new" for ::1 at 2023-07-15 13:56:16 +0800
+  
+ActionController::RoutingError (uninitialized constant SessionsController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  SessoinsController
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/rails/info/routes?path=ses" for ::1 at 2023-07-15 13:56:27 +0800
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"ses"}
+Completed 200 OK in 3ms (Views: 0.2ms | Allocations: 2332)
+
+
+Started GET "/rails/info/routes?path=sess" for ::1 at 2023-07-15 13:56:28 +0800
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"sess"}
+Completed 200 OK in 2ms (Views: 0.1ms | Allocations: 877)
+
+
+Started GET "/sessions/new" for ::1 at 2023-07-15 13:57:44 +0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 18.3ms | Allocations: 2684)
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 2792)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.0ms | Allocations: 7264)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass
+
+'.freeze; unless @user.errors.empty? 
+                      ^^^^^^^):
+    1: <h1 class="text-center">Login</h1>
+    2: <% unless @user.errors.empty? %>
+    3:     <div class="alert alert-danger" role="alert">
+    4:         <ul>
+    5:             <% @user.errors.messages.values.flatten.each do |error| %>
+  
+app/views/sessions/new.html.erb:2
+Started GET "/sessions/new" for ::1 at 2023-07-15 13:58:09 +0800
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 107.6ms | Allocations: 12244)
+  Rendered layouts/_navigation.html.erb (Duration: 0.8ms | Allocations: 310)
+  Rendered layout layouts/application.html.erb (Duration: 315.7ms | Allocations: 69230)
+Completed 200 OK in 323ms (Views: 321.1ms | ActiveRecord: 0.0ms | Allocations: 70212)
+
+
+Started GET "/sessions/new" for ::1 at 2023-07-15 13:58:44 +0800
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 2500)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered layout layouts/application.html.erb (Duration: 25.8ms | Allocations: 8998)
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.0ms | Allocations: 9314)
+
+
+Started GET "/users/new" for ::1 at 2023-07-15 14:05:45 +0800
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 2045)
+  Rendered layouts/_navigation.html.erb (Duration: 0.8ms | Allocations: 284)
+  Rendered layout layouts/application.html.erb (Duration: 65.3ms | Allocations: 19715)
+Completed 200 OK in 131ms (Views: 71.9ms | ActiveRecord: 0.8ms | Allocations: 40456)
+
+
+Started GET "/users/new" for ::1 at 2023-07-15 14:08:01 +0800
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1405)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 47.3ms | Allocations: 18554)
+Completed 200 OK in 60ms (Views: 48.8ms | ActiveRecord: 0.8ms | Allocations: 25897)
+
+
+Started POST "/users" for ::1 at 2023-07-15 14:08:12 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"777@qq.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"创建"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "777@qq.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "crypted_password", "salt", "created_at", "updated_at", "activation_state", "activation_token", "activation_token_expires_at", "remember_me_token", "remember_me_token_expires_at", "reset_password_token", "reset_password_token_expires_at", "reset_password_email_sent_at", "access_count_to_reset_password_page") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "777@qq.com"], ["crypted_password", "$2a$10$DqT97UPz0AhD3MbheWK9pedEWriOZRH/PwJ90aMCu2eViEDeESzwu"], ["salt", "zxM8T17f-zcwFuzQypEy"], ["created_at", "2023-07-15 06:08:13.057336"], ["updated_at", "2023-07-15 06:08:13.057336"], ["activation_state", "pending"], ["activation_token", "z_bdQmczCBT_TapseYcN"], ["activation_token_expires_at", nil], ["remember_me_token", nil], ["remember_me_token_expires_at", nil], ["reset_password_token", nil], ["reset_password_token_expires_at", nil], ["reset_password_email_sent_at", nil], ["access_count_to_reset_password_page", 0]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+Redirected to http://localhost:3000/sessions/new
+Completed 302 Found in 65ms (ActiveRecord: 2.4ms | Allocations: 6979)
+
+
+Started GET "/sessions/new" for ::1 at 2023-07-15 14:08:13 +0800
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 3423)
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 111)
+  Rendered layout layouts/application.html.erb (Duration: 29.6ms | Allocations: 10181)
+Completed 200 OK in 37ms (Views: 34.1ms | ActiveRecord: 0.0ms | Allocations: 10976)
+
+
+Started GET "/sessions/new" for ::1 at 2023-07-15 14:08:20 +0800
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 2450)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered layout layouts/application.html.erb (Duration: 32.8ms | Allocations: 9049)
+Completed 200 OK in 35ms (Views: 33.7ms | ActiveRecord: 0.0ms | Allocations: 9342)
+
+
+Started GET "/users/new" for ::1 at 2023-07-15 14:08:23 +0800
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1155)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered layout layouts/application.html.erb (Duration: 28.1ms | Allocations: 7661)
+Completed 200 OK in 31ms (Views: 29.2ms | ActiveRecord: 0.0ms | Allocations: 7969)
+
+
+Started GET "/users/new" for ::1 at 2023-07-15 14:09:34 +0800
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1858)
+  Rendered layouts/_navigation.html.erb (Duration: 0.7ms | Allocations: 276)
+  Rendered layout layouts/application.html.erb (Duration: 32.4ms | Allocations: 9072)
+Completed 200 OK in 40ms (Views: 37.7ms | ActiveRecord: 0.0ms | Allocations: 10038)
+
+
+Started GET "/sessions/new" for ::1 at 2023-07-15 14:09:37 +0800
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2920)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 26.3ms | Allocations: 9751)
+Completed 200 OK in 33ms (Views: 30.8ms | ActiveRecord: 0.0ms | Allocations: 10424)
+
+
+Started POST "/sessions/new" for ::1 at 2023-07-15 14:10:32 +0800
+  
+ActionController::RoutingError (No route matches [POST] "/sessions/new"):
+  
+Started POST "/sessions/new" for ::1 at 2023-07-15 14:10:57 +0800
+  
+ActionController::RoutingError (No route matches [POST] "/sessions/new"):
+  
+Started POST "/sessions/new" for ::1 at 2023-07-15 14:14:32 +0800
+  
+ActionController::RoutingError (No route matches [POST] "/sessions/new"):
+  
+Started GET "/" for ::1 at 2023-07-15 14:14:37 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 143)
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 139)
+  Rendered layout layouts/application.html.erb (Duration: 43.8ms | Allocations: 17565)
+Completed 200 OK in 50ms (Views: 48.2ms | Allocations: 18353)
+
+
+Started GET "/sessions/new" for ::1 at 2023-07-15 14:14:39 +0800
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 3146)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 110)
+  Rendered layout layouts/application.html.erb (Duration: 26.1ms | Allocations: 9891)
+Completed 200 OK in 29ms (Views: 27.5ms | Allocations: 10530)
+
+
+Started POST "/sessions/new" for ::1 at 2023-07-15 14:14:42 +0800
+  
+ActionController::RoutingError (No route matches [POST] "/sessions/new"):
+  
+Started GET "/" for ::1 at 2023-07-15 14:17:45 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 144)
+  Rendered layouts/_navigation.html.erb (Duration: 0.8ms | Allocations: 311)
+  Rendered layout layouts/application.html.erb (Duration: 45.6ms | Allocations: 18070)
+Completed 200 OK in 52ms (Views: 50.3ms | Allocations: 19123)
+
+
+Started GET "/sessions/new" for ::1 at 2023-07-15 14:17:49 +0800
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 3034)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 3120)
+Completed 500 Internal Server Error in 10ms (Allocations: 3873)
+
+
+  
+ActionView::Template::Error (undefined method `label' for nil:NilClass):
+    2: 
+    3: <%= form_tag url:sessions_path,method: :post do |form| %>
+    4:     <div class="mb-3">
+    5:         <%= form.label "邮箱",class:"form-label" %><br/>
+    6:         <%= form.email_field :email,class:"form-control" %>
+    7:     </div>
+    8: 
+  
+app/views/sessions/new.html.erb:5
+app/views/sessions/new.html.erb:3
+Started GET "/sessions/new" for ::1 at 2023-07-15 14:20:52 +0800
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2866)
+  Rendered layouts/_navigation.html.erb (Duration: 0.9ms | Allocations: 273)
+  Rendered layout layouts/application.html.erb (Duration: 29.9ms | Allocations: 10178)
+Completed 200 OK in 38ms (Views: 35.6ms | Allocations: 11105)
+
+
+Started POST "/sessions" for ::1 at 2023-07-15 14:20:58 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"777@qq.com", "password"=>"[FILTERED]", "commit"=>"登录"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = '777@qq.com' ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to 
+Completed 500 Internal Server Error in 206ms (ActiveRecord: 1.3ms | Allocations: 19732)
+
+
+  
+NoMethodError (undefined method `new_url' for #<SessionsController:0x00000000024d38>
+
+            target.public_send get_method_for_string str
+                  ^^^^^^^^^^^^
+Did you mean?  new_user_url):
+  
+app/controllers/sessions_controller.rb:14:in `create'
+Started POST "/sessions" for ::1 at 2023-07-15 14:31:32 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"777@qq.com", "password"=>"[FILTERED]", "commit"=>"登录"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = '777@qq.com' ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 2303)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 104)
+  Rendered layout layouts/application.html.erb (Duration: 45.5ms | Allocations: 19422)
+Completed 200 OK in 157ms (Views: 47.3ms | ActiveRecord: 0.5ms | Allocations: 27479)
+
+
+Started POST "/sessions" for ::1 at 2023-07-15 14:31:42 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"777@qq.com", "password"=>"[FILTERED]", "commit"=>"登录"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = '777@qq.com' ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 99ms (ActiveRecord: 0.2ms | Allocations: 1319)
+
+
+Started GET "/" for ::1 at 2023-07-15 14:31:42 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 145)
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 137)
+  Rendered layout layouts/application.html.erb (Duration: 26.5ms | Allocations: 7204)
+Completed 200 OK in 33ms (Views: 31.1ms | ActiveRecord: 0.0ms | Allocations: 7997)
+
+
+Started GET "/sessions/new" for ::1 at 2023-07-15 14:31:52 +0800
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 2436)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered layout layouts/application.html.erb (Duration: 26.7ms | Allocations: 8942)
+Completed 200 OK in 29ms (Views: 27.8ms | ActiveRecord: 0.0ms | Allocations: 9241)
+
+
+Started GET "/sessions/new" for ::1 at 2023-07-15 14:40:25 +0800
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2854)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:24
+  Rendered layouts/_navigation.html.erb (Duration: 19.0ms | Allocations: 14548)
+  Rendered layout layouts/application.html.erb (Duration: 69.6ms | Allocations: 34671)
+Completed 500 Internal Server Error in 77ms (ActiveRecord: 0.5ms | Allocations: 35697)
+
+
+  
+ActionView::Template::Error (undefined method `username' for #<User id: 2, email: "777@qq.com", crypted_password: "$2a$10$DqT97UPz0AhD3MbheWK9pedEWriOZRH/PwJ90aMCu2e...", salt: "zxM8T17f-zcwFuzQypEy", created_at: "2023-07-15 06:08:13.057336000 +0000", updated_at: "2023-07-15 06:08:13.057336000 +0000", activation_state: "pending", activation_token: "z_bdQmczCBT_TapseYcN", activation_token_expires_at: nil, remember_me_token: nil, remember_me_token_expires_at: nil, reset_password_token: nil, reset_password_token_expires_at: nil, reset_password_email_sent_at: nil, access_count_to_reset_password_page: 0>):
+    30:             </li>
+    31:         <% else %>
+    32:             <li class="nav-item">
+    33:                 <a class="nav-link" href="#">欢迎,<%= current_user.username %></a>
+    34:                 <%= link_to "退出",class:"nav-link",data:{turbo_method: :delete,turbo_confirm: "确认退出？"}%>
+    35:             </li>
+    36:         <% end %>
+  
+app/views/layouts/_navigation.html.erb:33
+app/views/layouts/application.html.erb:20
+Started GET "/" for ::1 at 2023-07-15 14:41:34 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 142)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:24
+  Rendered layouts/_navigation.html.erb (Duration: 20.0ms | Allocations: 9480)
+  Rendered layout layouts/application.html.erb (Duration: 64.7ms | Allocations: 26857)
+Completed 200 OK in 71ms (Views: 69.2ms | ActiveRecord: 1.0ms | Allocations: 27646)
+
+
+Started GET "/?class=nav-link&data%5Bturbo_confirm%5D=%E7%A1%AE%E8%AE%A4%E9%80%80%E5%87%BA%EF%BC%9F&data%5Bturbo_method%5D=delete" for ::1 at 2023-07-15 14:42:06 +0800
+Processing by HomeController#index as HTML
+  Parameters: {"class"=>"nav-link", "data"=>{"turbo_confirm"=>"确认退出？", "turbo_method"=>"delete"}}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 9)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:24
+  Rendered layouts/_navigation.html.erb (Duration: 2.7ms | Allocations: 711)
+  Rendered layout layouts/application.html.erb (Duration: 27.2ms | Allocations: 7511)
+Completed 200 OK in 29ms (Views: 27.8ms | ActiveRecord: 0.2ms | Allocations: 7825)
+
+
+Started GET "/?class=nav-link&data%5Bturbo_confirm%5D=%E7%A1%AE%E8%AE%A4%E9%80%80%E5%87%BA%EF%BC%9F&data%5Bturbo_method%5D=delete" for ::1 at 2023-07-15 14:44:15 +0800
+Processing by HomeController#index as HTML
+  Parameters: {"class"=>"nav-link", "data"=>{"turbo_confirm"=>"确认退出？", "turbo_method"=>"delete"}}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 148)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:24
+  Rendered layouts/_navigation.html.erb (Duration: 3.8ms | Allocations: 2291)
+  Rendered layout layouts/application.html.erb (Duration: 30.9ms | Allocations: 9617)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.2ms | Allocations: 10527)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"sessions"}, missing required keys: [:id]
+Did you mean?  session_url):
+    31:         <% else %>
+    32:             <li class="nav-item">
+    33:                 <a class="nav-link" href="#">欢迎,<%= current_user.username %></a>
+    34:                 <%= link_to "退出",session_path,class:"nav-link",data:{turbo_method: :delete,turbo_confirm: "确认退出？"}%>
+    35:             </li>
+    36:         <% end %>
+    37:       </ul>
+  
+app/views/layouts/_navigation.html.erb:34
+app/views/layouts/application.html.erb:20
+Started GET "/?class=nav-link&data%5Bturbo_confirm%5D=%E7%A1%AE%E8%AE%A4%E9%80%80%E5%87%BA%EF%BC%9F&data%5Bturbo_method%5D=delete" for ::1 at 2023-07-15 14:44:36 +0800
+Processing by HomeController#index as HTML
+  Parameters: {"class"=>"nav-link", "data"=>{"turbo_confirm"=>"确认退出？", "turbo_method"=>"delete"}}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 143)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:24
+  Rendered layouts/_navigation.html.erb (Duration: 3.9ms | Allocations: 2265)
+  Rendered layout layouts/application.html.erb (Duration: 29.4ms | Allocations: 9599)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.2ms | Allocations: 10491)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"sessions"}, missing required keys: [:id]
+Did you mean?  session_path):
+    31:         <% else %>
+    32:             <li class="nav-item">
+    33:                 <a class="nav-link" href="#">欢迎,<%= current_user.username %></a>
+    34:                 <%= link_to "退出",session_url,class:"nav-link",data:{turbo_method: :delete,turbo_confirm: "确认退出？"}%>
+    35:             </li>
+    36:         <% end %>
+    37:       </ul>
+  
+app/views/layouts/_navigation.html.erb:34
+app/views/layouts/application.html.erb:20
+Started GET "/?class=nav-link&data%5Bturbo_confirm%5D=%E7%A1%AE%E8%AE%A4%E9%80%80%E5%87%BA%EF%BC%9F&data%5Bturbo_method%5D=delete" for ::1 at 2023-07-15 14:45:45 +0800
+Processing by HomeController#index as HTML
+  Parameters: {"class"=>"nav-link", "data"=>{"turbo_confirm"=>"确认退出？", "turbo_method"=>"delete"}}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 143)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:24
+  Rendered layouts/_navigation.html.erb (Duration: 3.6ms | Allocations: 1083)
+  Rendered layout layouts/application.html.erb (Duration: 30.3ms | Allocations: 8419)
+Completed 200 OK in 38ms (Views: 35.5ms | ActiveRecord: 0.2ms | Allocations: 9339)
+
+
+Started GET "/sessions/2" for ::1 at 2023-07-15 14:45:50 +0800
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for SessionsController):
+  
+actionpack (7.0.6) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.6) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.6) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.6) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.6) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.6) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.7) lib/rack/etag.rb:27:in `call'
+rack (2.2.7) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.7) lib/rack/head.rb:12:in `call'
+actionpack (7.0.6) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.6) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.7) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.7) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.6) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.6) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.6) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.6) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.6) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.6) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.6) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.6) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.7) lib/rack/method_override.rb:24:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.6) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.6) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.6) lib/rails/engine.rb:530:in `call'
+puma (5.6.6) lib/puma/configuration.rb:252:in `call'
+puma (5.6.6) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.6) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.6) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.6) lib/puma/server.rb:443:in `process_client'
+puma (5.6.6) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/?class=nav-link&data%5Bturbo_confirm%5D=%E7%A1%AE%E8%AE%A4%E9%80%80%E5%87%BA%EF%BC%9F&data%5Bturbo_method%5D=delete" for ::1 at 2023-07-15 14:55:42 +0800
+Processing by HomeController#index as HTML
+  Parameters: {"class"=>"nav-link", "data"=>{"turbo_confirm"=>"确认退出？", "turbo_method"=>"delete"}}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 144)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:24
+  Rendered layouts/_navigation.html.erb (Duration: 9.0ms | Allocations: 1277)
+  Rendered layout layouts/application.html.erb (Duration: 358.0ms | Allocations: 44867)
+Completed 200 OK in 378ms (Views: 371.2ms | ActiveRecord: 1.0ms | Allocations: 45790)
+
+
+Started GET "/sessions/2" for ::1 at 2023-07-15 14:55:44 +0800
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for SessionsController):
+  
+actionpack (7.0.6) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.6) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.6) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.6) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.6) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.6) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.7) lib/rack/etag.rb:27:in `call'
+rack (2.2.7) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.7) lib/rack/head.rb:12:in `call'
+actionpack (7.0.6) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.6) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.7) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.7) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.6) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.6) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.6) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.6) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.6) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.6) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.6) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.6) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.7) lib/rack/method_override.rb:24:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.6) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.6) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.6) lib/rails/engine.rb:530:in `call'
+puma (5.6.6) lib/puma/configuration.rb:252:in `call'
+puma (5.6.6) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.6) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.6) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.6) lib/puma/server.rb:443:in `process_client'
+puma (5.6.6) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/sessions/2" for ::1 at 2023-07-15 14:55:47 +0800
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for SessionsController):
+  
+actionpack (7.0.6) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.6) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.6) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.6) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.6) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.6) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.7) lib/rack/etag.rb:27:in `call'
+rack (2.2.7) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.7) lib/rack/head.rb:12:in `call'
+actionpack (7.0.6) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.6) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.7) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.7) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.6) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.6) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.6) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.6) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.6) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.6) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.6) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.6) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.7) lib/rack/method_override.rb:24:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.6) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.6) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.6) lib/rails/engine.rb:530:in `call'
+puma (5.6.6) lib/puma/configuration.rb:252:in `call'
+puma (5.6.6) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.6) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.6) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.6) lib/puma/server.rb:443:in `process_client'
+puma (5.6.6) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/?class=nav-link&data%5Bturbo_confirm%5D=%E7%A1%AE%E8%AE%A4%E9%80%80%E5%87%BA%EF%BC%9F&data%5Bturbo_method%5D=delete" for ::1 at 2023-07-15 14:56:06 +0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Parameters: {"class"=>"nav-link", "data"=>{"turbo_confirm"=>"确认退出？", "turbo_method"=>"delete"}}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 14.9ms | Allocations: 379)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:24
+  Rendered layouts/_navigation.html.erb (Duration: 71.4ms | Allocations: 23536)
+  Rendered layout layouts/application.html.erb (Duration: 436.1ms | Allocations: 94130)
+Completed 200 OK in 466ms (Views: 444.0ms | ActiveRecord: 1.1ms | Allocations: 98659)
+
+
+Started GET "/?class=nav-link&data%5Bturbo_confirm%5D=%E7%A1%AE%E8%AE%A4%E9%80%80%E5%87%BA%EF%BC%9F&data%5Bturbo_method%5D=delete" for ::1 at 2023-07-15 14:56:09 +0800
+Processing by HomeController#index as HTML
+  Parameters: {"class"=>"nav-link", "data"=>{"turbo_confirm"=>"确认退出？", "turbo_method"=>"delete"}}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 9)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:24
+  Rendered layouts/_navigation.html.erb (Duration: 2.3ms | Allocations: 765)
+  Rendered layout layouts/application.html.erb (Duration: 26.0ms | Allocations: 7564)
+Completed 200 OK in 29ms (Views: 27.0ms | ActiveRecord: 0.1ms | Allocations: 7908)
+
+
+Started GET "/sessions/2" for ::1 at 2023-07-15 14:56:11 +0800
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for SessionsController):
+  
+actionpack (7.0.6) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.6) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.6) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.6) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.6) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.6) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.7) lib/rack/etag.rb:27:in `call'
+rack (2.2.7) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.7) lib/rack/head.rb:12:in `call'
+actionpack (7.0.6) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.6) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.7) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.7) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.6) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.6) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.6) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.6) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.6) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.6) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.6) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.6) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.7) lib/rack/method_override.rb:24:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.6) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.6) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.6) lib/rails/engine.rb:530:in `call'
+puma (5.6.6) lib/puma/configuration.rb:252:in `call'
+puma (5.6.6) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.6) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.6) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.6) lib/puma/server.rb:443:in `process_client'
+puma (5.6.6) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/?class=nav-link&data%5Bturbo_confirm%5D=%E7%A1%AE%E8%AE%A4%E9%80%80%E5%87%BA%EF%BC%9F&data%5Bturbo_method%5D=delete" for ::1 at 2023-07-15 14:58:21 +0800
+Processing by HomeController#index as HTML
+  Parameters: {"class"=>"nav-link", "data"=>{"turbo_confirm"=>"确认退出？", "turbo_method"=>"delete"}}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 143)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:24
+  Rendered layouts/_navigation.html.erb (Duration: 3.7ms | Allocations: 1098)
+  Rendered layout layouts/application.html.erb (Duration: 31.0ms | Allocations: 8539)
+Completed 200 OK in 38ms (Views: 35.7ms | ActiveRecord: 0.2ms | Allocations: 9475)
+
+
+Started GET "/sessions/2" for ::1 at 2023-07-15 14:58:23 +0800
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for SessionsController):
+  
+actionpack (7.0.6) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.6) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.6) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.6) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.6) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.6) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.7) lib/rack/etag.rb:27:in `call'
+rack (2.2.7) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.7) lib/rack/head.rb:12:in `call'
+actionpack (7.0.6) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.6) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.7) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.7) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.6) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.6) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.6) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.6) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.6) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.6) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.6) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.6) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.7) lib/rack/method_override.rb:24:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.6) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.6) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.6) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.6) lib/rails/engine.rb:530:in `call'
+puma (5.6.6) lib/puma/configuration.rb:252:in `call'
+puma (5.6.6) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.6) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.6) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.6) lib/puma/server.rb:443:in `process_client'
+puma (5.6.6) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/?class=nav-link&data%5Bturbo_confirm%5D=%E7%A1%AE%E8%AE%A4%E9%80%80%E5%87%BA%EF%BC%9F&data%5Bturbo_method%5D=delete" for ::1 at 2023-07-15 15:15:16 +0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Parameters: {"class"=>"nav-link", "data"=>{"turbo_confirm"=>"确认退出？", "turbo_method"=>"delete"}}
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 15.1ms | Allocations: 379)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:24
+  Rendered layouts/_navigation.html.erb (Duration: 56.2ms | Allocations: 23549)
+  Rendered layout layouts/application.html.erb (Duration: 575.3ms | Allocations: 133117)
+Completed 200 OK in 606ms (Views: 583.9ms | ActiveRecord: 0.8ms | Allocations: 137656)
+
+
+Started DELETE "/sessions/2" for ::1 at 2023-07-15 15:15:35 +0800
+Processing by SessionsController#destroy as TURBO_STREAM
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:19:in `destroy'
+  [1m[36mUser Update All (3.8ms)[0m  [1m[33mUPDATE "users" SET "remember_me_token" = ?, "remember_me_token_expires_at" = ? WHERE "users"."id" = ?[0m  [["remember_me_token", nil], ["remember_me_token_expires_at", nil], ["id", 2]]
+  ↳ app/controllers/sessions_controller.rb:19:in `destroy'
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 3.9ms | Allocations: 2068)
+
+
+Started GET "/" for ::1 at 2023-07-15 15:15:35 +0800
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_navigation.html.erb (Duration: 1.0ms | Allocations: 169)
+  Rendered layout layouts/application.html.erb (Duration: 32.9ms | Allocations: 7108)
+Completed 200 OK in 36ms (Views: 33.8ms | ActiveRecord: 0.0ms | Allocations: 7478)
+
+
+Started GET "/" for ::1 at 2023-07-15 15:17:53 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 146)
+  Rendered layouts/_navigation.html.erb (Duration: 0.9ms | Allocations: 428)
+  Rendered layout layouts/application.html.erb (Duration: 28.8ms | Allocations: 7885)
+Completed 200 OK in 37ms (Views: 34.0ms | ActiveRecord: 0.0ms | Allocations: 8844)
+
+
+Started GET "/sessions/new" for ::1 at 2023-07-15 15:17:57 +0800
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 108.6ms | Allocations: 11523)
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 141)
+  Rendered layout layouts/application.html.erb (Duration: 132.9ms | Allocations: 18432)
+Completed 200 OK in 140ms (Views: 137.2ms | ActiveRecord: 0.0ms | Allocations: 19182)
+
+
+Started POST "/sessions" for ::1 at 2023-07-15 15:18:00 +0800
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"777@qq.com", "password"=>"[FILTERED]", "commit"=>"登录"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = '777@qq.com' ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 2257)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 24.4ms | Allocations: 8906)
+Completed 200 OK in 122ms (Views: 25.8ms | ActiveRecord: 0.2ms | Allocations: 10623)
+
+
+Started POST "/sessions" for ::1 at 2023-07-15 15:18:02 +0800
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"777@qq.com", "password"=>"[FILTERED]", "commit"=>"登录"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = '777@qq.com' ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 2229)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 8835)
+Completed 200 OK in 122ms (Views: 25.8ms | ActiveRecord: 0.2ms | Allocations: 9997)
+
+
+Started POST "/sessions" for ::1 at 2023-07-15 15:18:05 +0800
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"777@qq.com", "password"=>"[FILTERED]", "commit"=>"登录"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = '777@qq.com' ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 2229)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 28.6ms | Allocations: 8835)
+Completed 200 OK in 131ms (Views: 30.0ms | ActiveRecord: 0.1ms | Allocations: 9975)
+
+
+Started GET "/sessions/new" for ::1 at 2023-07-15 15:18:54 +0800
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 2580)
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 142)
+  Rendered layout layouts/application.html.erb (Duration: 58.0ms | Allocations: 29582)
+Completed 200 OK in 61ms (Views: 59.5ms | Allocations: 30237)
+
+
+Started POST "/sessions" for ::1 at 2023-07-15 15:18:58 +0800
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"777@qq.com", "password"=>"[FILTERED]", "commit"=>"登录"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = '777@qq.com' ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://localhost:3000/sessions/new
+Completed 302 Found in 110ms (ActiveRecord: 0.9ms | Allocations: 8282)
+
+
+Started GET "/sessions/new" for ::1 at 2023-07-15 15:18:58 +0800
+Processing by SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 2525)
+  Rendered layouts/_navigation.html.erb (Duration: 5.3ms | Allocations: 121)
+  Rendered layout layouts/application.html.erb (Duration: 52.8ms | Allocations: 9295)
+Completed 200 OK in 55ms (Views: 53.7ms | ActiveRecord: 0.0ms | Allocations: 9630)
+
+
+Started POST "/sessions" for ::1 at 2023-07-15 15:19:05 +0800
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"777@qq.com", "password"=>"[FILTERED]", "commit"=>"登录"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = '777@qq.com' ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://localhost:3000/sessions/new
+Completed 302 Found in 103ms (ActiveRecord: 0.1ms | Allocations: 1036)
+
+
+Started GET "/sessions/new" for ::1 at 2023-07-15 15:19:05 +0800
+Processing by SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 2425)
+  Rendered layouts/_navigation.html.erb (Duration: 0.1ms | Allocations: 113)
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 9081)
+Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 0.0ms | Allocations: 9368)
+
+
+Started POST "/sessions" for ::1 at 2023-07-15 21:34:30 +0800
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"777@qq.com", "password"=>"[FILTERED]", "commit"=>"登录"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = '777@qq.com' ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://localhost:3000/sessions/new
+Completed 302 Found in 123ms (ActiveRecord: 2.4ms | Allocations: 1195)
+
+
+Started GET "/sessions/new" for ::1 at 2023-07-15 21:34:30 +0800
+Processing by SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2407)
+  Rendered layouts/_navigation.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layout layouts/application.html.erb (Duration: 35.5ms | Allocations: 9063)
+Completed 200 OK in 39ms (Views: 37.2ms | ActiveRecord: 0.0ms | Allocations: 9350)
+
+
+Started POST "/sessions" for ::1 at 2023-07-15 21:34:35 +0800
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"777@qq.com", "password"=>"[FILTERED]", "commit"=>"登录"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = '777@qq.com' ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:8:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 100ms (ActiveRecord: 0.1ms | Allocations: 1075)
+
+
+Started GET "/" for ::1 at 2023-07-15 21:34:35 +0800
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 12)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:24
+  Rendered layouts/_navigation.html.erb (Duration: 4.6ms | Allocations: 1770)
+  Rendered layout layouts/application.html.erb (Duration: 28.9ms | Allocations: 8807)
+Completed 200 OK in 33ms (Views: 30.5ms | ActiveRecord: 0.2ms | Allocations: 9461)
+
+
+Started GET "/" for ::1 at 2023-07-15 21:35:18 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 148)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:24
+  Rendered layouts/_navigation.html.erb (Duration: 4.5ms | Allocations: 1096)
+  Rendered layout layouts/application.html.erb (Duration: 45.8ms | Allocations: 8574)
+Completed 200 OK in 55ms (Views: 51.2ms | ActiveRecord: 0.3ms | Allocations: 9531)
+
+
+Started GET "/" for ::1 at 2023-07-15 21:35:41 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 143)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:24
+  Rendered layouts/_navigation.html.erb (Duration: 3.3ms | Allocations: 1088)
+  Rendered layout layouts/application.html.erb (Duration: 30.2ms | Allocations: 8560)
+Completed 200 OK in 38ms (Views: 35.4ms | ActiveRecord: 0.2ms | Allocations: 9497)
+
+
+Started GET "/" for ::1 at 2023-07-15 21:35:52 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 143)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:24
+  Rendered layouts/_navigation.html.erb (Duration: 3.0ms | Allocations: 1087)
+  Rendered layout layouts/application.html.erb (Duration: 31.5ms | Allocations: 8542)
+Completed 200 OK in 39ms (Views: 36.6ms | ActiveRecord: 0.1ms | Allocations: 9479)
+
+
+Started GET "/" for ::1 at 2023-07-15 21:36:21 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 143)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:24
+  Rendered layouts/_navigation.html.erb (Duration: 2.7ms | Allocations: 1088)
+  Rendered layout layouts/application.html.erb (Duration: 29.0ms | Allocations: 8531)
+Completed 200 OK in 36ms (Views: 33.7ms | ActiveRecord: 0.2ms | Allocations: 9468)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCategories (20230715135517)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "categories" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "weight" integer DEFAULT 0, "products_counter" integer DEFAULT 0, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE INDEX "index_categories_on_title" ON "categories" ("title")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230715135517"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateProducts (20230715135534)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "products" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "category_id" integer, "title" varchar, "amount" integer DEFAULT 0, "status" varchar DEFAULT 'off', "msrp" decimal(10,2), "price" decimal(10,2), "uuid" varchar, "description" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_products_on_status_and_category_id" ON "products" ("status", "category_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_products_on_category_id" ON "products" ("category_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_products_on_title" ON "products" ("title")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_products_on_uuid" ON "products" ("uuid")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230715135534"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddAncestryToCategory (20230715144547)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "categories" ADD "ancestry" varchar[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_categories_on_ancestry" ON "categories" ("ancestry")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230715144547"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (0.8ms)[0m  [1m[32mINSERT INTO "categories" ("title", "weight", "products_counter", "created_at", "updated_at", "ancestry") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "c1"], ["weight", 0], ["products_counter", 0], ["created_at", "2023-07-15 14:47:39.670977"], ["updated_at", "2023-07-15 14:47:39.670977"], ["ancestry", nil]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (0.9ms)[0m  [1m[32mINSERT INTO "categories" ("title", "weight", "products_counter", "created_at", "updated_at", "ancestry") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "c1_child"], ["weight", 0], ["products_counter", 0], ["created_at", "2023-07-15 14:48:14.554809"], ["updated_at", "2023-07-15 14:48:14.554809"], ["ancestry", "1"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = '1'[0m
+  [1m[36mCategory Pluck (0.2ms)[0m  [1m[34mSELECT "categories"."id" FROM "categories" WHERE "categories"."ancestry" = '1'[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = '1' ORDER BY "categories"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = '1' ORDER BY "categories"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = '1/2'[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (0.9ms)[0m  [1m[32mINSERT INTO "categories" ("title", "weight", "products_counter", "created_at", "updated_at", "ancestry") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "c1_child_child"], ["weight", 0], ["products_counter", 0], ["created_at", "2023-07-15 14:50:42.921032"], ["updated_at", "2023-07-15 14:50:42.921032"], ["ancestry", "1/2"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" = '1'[0m
+  [1m[36mCategory Pluck (0.1ms)[0m  [1m[34mSELECT "categories"."id" FROM "categories" WHERE "categories"."ancestry" = '1'[0m
+Started GET "/" for ::1 at 2023-07-16 13:36:07 +0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 379)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:24
+  Rendered layouts/_navigation.html.erb (Duration: 69.6ms | Allocations: 23561)
+  Rendered layout layouts/application.html.erb (Duration: 327.9ms | Allocations: 92172)
+Completed 200 OK in 366ms (Views: 338.8ms | ActiveRecord: 1.0ms | Allocations: 96806)
+
+
