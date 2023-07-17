@@ -2468,3 +2468,27 @@ Processing by Admin::SessionsController#new as HTML
 Completed 200 OK in 152ms (Views: 149.3ms | ActiveRecord: 0.1ms | Allocations: 32500)
 
 
+Started GET "/admin" for ::1 at 2023-07-17 21:38:48 +0800
+Processing by Admin::SessionsController#new as HTML
+  Rendering layout admin/layouts/admin.html.erb
+  Rendering admin/sessions/new.html.erb within admin/layouts/admin
+  Rendered admin/sessions/new.html.erb within admin/layouts/admin (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/layouts/_navigation.html.erb:17
+  Rendered admin/layouts/_navigation.html.erb (Duration: 3.0ms | Allocations: 685)
+  Rendered layout admin/layouts/admin.html.erb (Duration: 67.6ms | Allocations: 30812)
+Completed 200 OK in 71ms (Views: 68.6ms | ActiveRecord: 0.1ms | Allocations: 31091)
+
+
+Started GET "/admin" for ::1 at 2023-07-17 21:43:04 +0800
+Processing by Admin::SessionsController#new as HTML
+  Rendering layout admin/layouts/admin.html.erb
+  Rendering admin/sessions/new.html.erb within admin/layouts/admin
+  Rendered admin/sessions/new.html.erb within admin/layouts/admin (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/layouts/_navigation.html.erb:17
+  Rendered admin/layouts/_navigation.html.erb (Duration: 2.5ms | Allocations: 685)
+  Rendered layout admin/layouts/admin.html.erb (Duration: 25.4ms | Allocations: 7385)
+Completed 200 OK in 29ms (Views: 26.6ms | ActiveRecord: 0.1ms | Allocations: 7646)
+
+
