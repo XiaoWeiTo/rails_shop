@@ -1,2 +1,43 @@
-<h1>Admin::Categories#index</h1>
-<p>Find me in app/views/admin/categories/index.html.erb</p>
+<div class="d-flex justify-content-between">
+    <div>
+        <h3>
+            分类(<%= @categories.total_entries %>)
+        </h3>
+    </div>
+
+    <div class="pull-right">
+        <%= link_to "创建分类",new_admin_category_path,class:"btn btn-primary" %>
+    </div>
+</div>
+
+<div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+            <th scope="col">#</th>
+            <th scope="col">ID</th>
+            <th scope="col">名称</th>
+            <th scope="col">权重</th>
+            <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <% @categories.each_with_index do |category,index| %>
+                <tr>
+                    <th scope="row"><%= index + 1 %></th>
+                    <td><%= category.id %></td>
+                    <td><%= category.title %></td>
+                    <td><%= category.weight %></td>
+                    <td align="right">
+                        <%= link_to "编辑",edit_admin_category_path(category) %>
+                        <%= link_to "删除",admin_category_path(category),data:{
+                            turbo_method: :delete,
+                            turbo_confirm: "确认删除该条分类以及子分类？"
+                        }%>
+                    </td>
+                </tr>
+            <% end %>
+        </tbody>
+    </table>
+    <%= will_paginate @categories %>
+</div>

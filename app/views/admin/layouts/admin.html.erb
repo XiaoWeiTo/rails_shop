@@ -12,13 +12,14 @@
 
   <body>
     <div class="container">
+      <%= render "admin/layouts/navigation"%>
       <% unless flash[:notice].blank? %>
         <div class="alert alert-info alert-dismissible fade show" role="alert">
           <strong><%= flash[:notice] %></strong> 
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
       <% end %>
-      <%= render "admin/layouts/navigation"%>
+      
       <%= yield %>
     <div>
   </body>

@@ -1,0 +1,24 @@
+<%= form_with(model: category,url: admin_categories_path) do |form| %>
+    <div class="mb-3">
+        <%= form.label "所属分类",class:"form-label" %><br/>
+        <select name="category[ancestry]" class="form-select" aria-label="Default select example">
+            <option ></option>
+            <% @root_categories.each do |c| %>
+                <% next if c.id == category.id %>
+                <option value="<%= c.id %>"  <%= category.ancestry == c.id.to_s ? 'selected':'' %>><%= c.title %></option>
+            <% end %>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <%= form.label "名称",class:"form-label" %><br/>
+        <%= form.text_field :title,class:"form-control" %>
+    </div>
+    <div class="mb-3">
+        <%= form.label "权重",class:"form-label" %><br/>
+        <%= form.number_field :weight,class:"form-control",step: 1 %>
+    </div>
+    <div class="mb-3 d-flex justify-content-center">
+        <%= form.submit (category.new_record? ? "创建" : "修改"),class:"btn btn-primary btn-lg" %>
+    </div>
+<% end %>

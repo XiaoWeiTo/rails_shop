@@ -2492,3 +2492,627 @@ Processing by Admin::SessionsController#new as HTML
 Completed 200 OK in 29ms (Views: 26.6ms | ActiveRecord: 0.1ms | Allocations: 7646)
 
 
+Started GET "/" for ::1 at 2023-07-17 22:02:35 +0800
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 143)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:24
+  Rendered layouts/_navigation.html.erb (Duration: 5.0ms | Allocations: 1313)
+  Rendered layout layouts/application.html.erb (Duration: 32.0ms | Allocations: 8789)
+Completed 200 OK in 41ms (Views: 37.4ms | ActiveRecord: 0.6ms | Allocations: 9657)
+
+
+Started GET "/admin" for ::1 at 2023-07-17 22:06:09 +0800
+Processing by Admin::SessionsController#new as HTML
+  Rendering layout admin/layouts/admin.html.erb
+  Rendering admin/sessions/new.html.erb within admin/layouts/admin
+  Rendered admin/sessions/new.html.erb within admin/layouts/admin (Duration: 0.0ms | Allocations: 7)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/layouts/_navigation.html.erb:17
+  Rendered admin/layouts/_navigation.html.erb (Duration: 3.0ms | Allocations: 685)
+  Rendered layout admin/layouts/admin.html.erb (Duration: 30.5ms | Allocations: 7404)
+Completed 200 OK in 33ms (Views: 31.4ms | ActiveRecord: 0.1ms | Allocations: 7684)
+
+
+Started GET "/" for ::1 at 2023-07-17 22:28:47 +0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 379)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:24
+  Rendered layouts/_navigation.html.erb (Duration: 66.9ms | Allocations: 23563)
+  Rendered layout layouts/application.html.erb (Duration: 310.4ms | Allocations: 105086)
+Completed 200 OK in 353ms (Views: 320.4ms | ActiveRecord: 1.0ms | Allocations: 110015)
+
+
+Started GET "/admin" for ::1 at 2023-07-17 22:28:50 +0800
+Processing by Admin::SessionsController#new as HTML
+  Rendering layout admin/layouts/admin.html.erb
+  Rendering admin/sessions/new.html.erb within admin/layouts/admin
+  Rendered admin/sessions/new.html.erb within admin/layouts/admin (Duration: 0.6ms | Allocations: 133)
+  Rendered admin/layouts/_navigation.html.erb (Duration: 11.1ms | Allocations: 5866)
+  Rendered layout admin/layouts/admin.html.erb (Duration: 36.4ms | Allocations: 13358)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.0ms | Allocations: 14139)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `admin_category' for #<ActionView::Base:0x0000000000ebc8>
+Did you mean?  admin_category_url):
+     7:     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     8:       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+     9:         <li class="nav-item">
+    10:           <%= link_to "分类",admin_category,class:"nav-link" %>
+    11:         </li>
+    12:       </ul>
+    13: 
+  
+app/views/admin/layouts/_navigation.html.erb:10
+app/views/admin/layouts/admin.html.erb:21
+Started GET "/admin" for ::1 at 2023-07-17 22:29:05 +0800
+Processing by Admin::SessionsController#new as HTML
+  Rendering layout admin/layouts/admin.html.erb
+  Rendering admin/sessions/new.html.erb within admin/layouts/admin
+  Rendered admin/sessions/new.html.erb within admin/layouts/admin (Duration: 0.4ms | Allocations: 132)
+  Rendered admin/layouts/_navigation.html.erb (Duration: 1.6ms | Allocations: 1650)
+  Rendered layout admin/layouts/admin.html.erb (Duration: 26.3ms | Allocations: 9121)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms | Allocations: 9960)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"admin/categories"}, missing required keys: [:id]
+Did you mean?  admin_category_url):
+     7:     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     8:       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+     9:         <li class="nav-item">
+    10:           <%= link_to "分类",admin_category_path,class:"nav-link" %>
+    11:         </li>
+    12:       </ul>
+    13: 
+  
+app/views/admin/layouts/_navigation.html.erb:10
+app/views/admin/layouts/admin.html.erb:21
+Started GET "/admin" for ::1 at 2023-07-17 22:31:01 +0800
+Processing by Admin::SessionsController#new as HTML
+  Rendering layout admin/layouts/admin.html.erb
+  Rendering admin/sessions/new.html.erb within admin/layouts/admin
+  Rendered admin/sessions/new.html.erb within admin/layouts/admin (Duration: 0.5ms | Allocations: 132)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/layouts/_navigation.html.erb:15
+  Rendered admin/layouts/_navigation.html.erb (Duration: 3.5ms | Allocations: 1169)
+  Rendered layout admin/layouts/admin.html.erb (Duration: 29.0ms | Allocations: 8643)
+Completed 200 OK in 34ms (Views: 31.4ms | ActiveRecord: 0.2ms | Allocations: 9506)
+
+
+Started GET "/admin/categories" for ::1 at 2023-07-17 22:31:02 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering layout admin/layouts/admin.html.erb
+  Rendering admin/categories/index.html.erb within admin/layouts/admin
+  [1m[36mCategory Count (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories" WHERE "categories"."ancestry" IS NULL[0m
+  ↳ app/views/admin/categories/index.html.erb:7
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL ORDER BY "categories"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/admin/categories/index.html.erb:23:in `each_with_index'
+  Rendered admin/categories/index.html.erb within admin/layouts/admin (Duration: 22.1ms | Allocations: 10501)
+  Rendered layout admin/layouts/admin.html.erb (Duration: 23.2ms | Allocations: 10584)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 1.6ms | Allocations: 14524)
+
+
+  
+ActionView::Template::Error (undefined method `admin_category_category' for #<ActionView::Base:0x0000000000f460>
+Did you mean?  admin_category_path):
+    28:                     <td><%= category.weight %></td>
+    29:                     <td align="right">
+    30:                         <%= link_to "编辑",edit_admin_category_path(category) %>
+    31:                         <%= link_to "删除",admin_category_category(category),data:{
+    32:                             turbo_method: :delete,
+    33:                             turbo_confirm: "确认删除该条分类以及子分类？"
+    34:                         }%>
+  
+app/views/admin/categories/index.html.erb:31
+app/views/admin/categories/index.html.erb:23:in `each_with_index'
+app/views/admin/categories/index.html.erb:23
+Started GET "/admin/categories" for ::1 at 2023-07-17 22:31:31 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering layout admin/layouts/admin.html.erb
+  Rendering admin/categories/index.html.erb within admin/layouts/admin
+  [1m[36mCategory Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories" WHERE "categories"."ancestry" IS NULL[0m
+  ↳ app/views/admin/categories/index.html.erb:7
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL ORDER BY "categories"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/admin/categories/index.html.erb:23:in `each_with_index'
+  Rendered admin/categories/index.html.erb within admin/layouts/admin (Duration: 5.2ms | Allocations: 1946)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/layouts/_navigation.html.erb:15
+  Rendered admin/layouts/_navigation.html.erb (Duration: 3.4ms | Allocations: 1041)
+  Rendered layout admin/layouts/admin.html.erb (Duration: 34.1ms | Allocations: 10299)
+Completed 200 OK in 40ms (Views: 35.8ms | ActiveRecord: 0.5ms | Allocations: 11396)
+
+
+Started GET "/admin/categories" for ::1 at 2023-07-17 22:33:12 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering layout admin/layouts/admin.html.erb
+  Rendering admin/categories/index.html.erb within admin/layouts/admin
+  [1m[36mCategory Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories" WHERE "categories"."ancestry" IS NULL[0m
+  ↳ app/views/admin/categories/index.html.erb:7
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL ORDER BY "categories"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/admin/categories/index.html.erb:23:in `each_with_index'
+  Rendered admin/categories/index.html.erb within admin/layouts/admin (Duration: 8.3ms | Allocations: 1946)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/layouts/_navigation.html.erb:15
+  Rendered admin/layouts/_navigation.html.erb (Duration: 3.7ms | Allocations: 1037)
+  Rendered layout admin/layouts/admin.html.erb (Duration: 38.7ms | Allocations: 10296)
+Completed 200 OK in 44ms (Views: 40.4ms | ActiveRecord: 0.5ms | Allocations: 11398)
+
+
+Started GET "/admin/categories" for ::1 at 2023-07-17 22:33:51 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering layout admin/layouts/admin.html.erb
+  Rendering admin/categories/index.html.erb within admin/layouts/admin
+  [1m[36mCategory Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories" WHERE "categories"."ancestry" IS NULL[0m
+  ↳ app/views/admin/categories/index.html.erb:4
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL ORDER BY "categories"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/admin/categories/index.html.erb:25:in `each_with_index'
+  Rendered admin/categories/index.html.erb within admin/layouts/admin (Duration: 5.2ms | Allocations: 1939)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/layouts/_navigation.html.erb:15
+  Rendered admin/layouts/_navigation.html.erb (Duration: 3.5ms | Allocations: 1036)
+  Rendered layout admin/layouts/admin.html.erb (Duration: 33.8ms | Allocations: 10253)
+Completed 200 OK in 39ms (Views: 35.3ms | ActiveRecord: 0.7ms | Allocations: 11344)
+
+
+Started GET "/admin/categories" for ::1 at 2023-07-17 22:34:17 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering layout admin/layouts/admin.html.erb
+  Rendering admin/categories/index.html.erb within admin/layouts/admin
+  [1m[36mCategory Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories" WHERE "categories"."ancestry" IS NULL[0m
+  ↳ app/views/admin/categories/index.html.erb:4
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL ORDER BY "categories"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/admin/categories/index.html.erb:25:in `each_with_index'
+  Rendered admin/categories/index.html.erb within admin/layouts/admin (Duration: 5.0ms | Allocations: 1937)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/layouts/_navigation.html.erb:15
+  Rendered admin/layouts/_navigation.html.erb (Duration: 3.3ms | Allocations: 1036)
+  Rendered layout admin/layouts/admin.html.erb (Duration: 33.0ms | Allocations: 10245)
+Completed 200 OK in 38ms (Views: 34.8ms | ActiveRecord: 0.5ms | Allocations: 11333)
+
+
+Started GET "/admin/categories" for ::1 at 2023-07-17 22:34:31 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering layout admin/layouts/admin.html.erb
+  Rendering admin/categories/index.html.erb within admin/layouts/admin
+  [1m[36mCategory Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories" WHERE "categories"."ancestry" IS NULL[0m
+  ↳ app/views/admin/categories/index.html.erb:4
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL ORDER BY "categories"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/admin/categories/index.html.erb:25:in `each_with_index'
+  Rendered admin/categories/index.html.erb within admin/layouts/admin (Duration: 4.9ms | Allocations: 1938)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/layouts/_navigation.html.erb:15
+  Rendered admin/layouts/_navigation.html.erb (Duration: 3.4ms | Allocations: 1037)
+  Rendered layout admin/layouts/admin.html.erb (Duration: 33.0ms | Allocations: 10271)
+Completed 200 OK in 38ms (Views: 34.8ms | ActiveRecord: 0.5ms | Allocations: 11359)
+
+
+Started GET "/admin/categories/new" for ::1 at 2023-07-17 22:35:20 +0800
+Processing by Admin::CategoriesController#new as HTML
+  Rendering layout admin/layouts/admin.html.erb
+  Rendering admin/categories/new.html.erb within admin/layouts/admin
+  Rendered admin/categories/new.html.erb within admin/layouts/admin (Duration: 0.5ms | Allocations: 123)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/layouts/_navigation.html.erb:15
+  Rendered admin/layouts/_navigation.html.erb (Duration: 3.7ms | Allocations: 1145)
+  Rendered layout admin/layouts/admin.html.erb (Duration: 31.0ms | Allocations: 8597)
+Completed 200 OK in 36ms (Views: 33.0ms | ActiveRecord: 0.2ms | Allocations: 9452)
+
+
+Started GET "/admin/categories" for ::1 at 2023-07-20 23:13:42 +0800
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Admin::CategoriesController#index as HTML
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.0ms | Allocations: 10002)
+
+
+  
+NoMethodError (undefined method `validate_presence_of' for Category:Class
+Did you mean?  validates_presence_of
+               validates_absence_of):
+  
+app/models/category.rb:5:in `<class:Category>'
+app/models/category.rb:1:in `<main>'
+app/controllers/admin/categories_controller.rb:3:in `index'
+Started GET "/admin/categories" for ::1 at 2023-07-20 23:14:01 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering layout admin/layouts/admin.html.erb
+  Rendering admin/categories/index.html.erb within admin/layouts/admin
+  [1m[36mCategory Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories" WHERE "categories"."ancestry" IS NULL[0m
+  ↳ app/views/admin/categories/index.html.erb:4
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL ORDER BY "categories"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/admin/categories/index.html.erb:25:in `each_with_index'
+  Rendered admin/categories/index.html.erb within admin/layouts/admin (Duration: 12.4ms | Allocations: 7209)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/layouts/_navigation.html.erb:15
+  Rendered admin/layouts/_navigation.html.erb (Duration: 54.8ms | Allocations: 20785)
+  Rendered layout admin/layouts/admin.html.erb (Duration: 292.9ms | Allocations: 108907)
+Completed 200 OK in 309ms (Views: 293.9ms | ActiveRecord: 1.9ms | Allocations: 113495)
+
+
+Started GET "/admin/categories/new" for ::1 at 2023-07-20 23:14:05 +0800
+Processing by Admin::CategoriesController#new as HTML
+  Rendering layout admin/layouts/admin.html.erb
+  Rendering admin/categories/new.html.erb within admin/layouts/admin
+  Rendered admin/categories/new.html.erb within admin/layouts/admin (Duration: 7.9ms | Allocations: 5429)
+  Rendered layout admin/layouts/admin.html.erb (Duration: 8.9ms | Allocations: 5507)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 6007)
+
+
+  
+ActionView::Template::Error (undefined method `categories_path' for #<ActionView::Base:0x00000000014aa0>
+
+              recipient.public_send(method, *args, options)
+                       ^^^^^^^^^^^^):
+     9:     </div>
+    10: <% end %>
+    11: 
+    12: <%= form_with model:@category do |form| %>
+    13:     <div class="mb-3">
+    14:         <%= form.label "所属分类",class:"form-label" %><br/>
+    15:         <select name="category[ancestry]" class="form-select" aria-label="Default select example">
+  
+app/views/admin/categories/new.html.erb:12
+Started GET "/admin/categories" for ::1 at 2023-07-20 23:26:46 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering layout admin/layouts/admin.html.erb
+  Rendering admin/categories/index.html.erb within admin/layouts/admin
+  [1m[36mCategory Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories" WHERE "categories"."ancestry" IS NULL[0m
+  ↳ app/views/admin/categories/index.html.erb:4
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL ORDER BY "categories"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/admin/categories/index.html.erb:25:in `each_with_index'
+  Rendered admin/categories/index.html.erb within admin/layouts/admin (Duration: 5.3ms | Allocations: 1460)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/layouts/_navigation.html.erb:15
+  Rendered admin/layouts/_navigation.html.erb (Duration: 2.2ms | Allocations: 783)
+  Rendered layout admin/layouts/admin.html.erb (Duration: 37.5ms | Allocations: 8986)
+Completed 200 OK in 43ms (Views: 37.9ms | ActiveRecord: 1.0ms | Allocations: 9621)
+
+
+Started GET "/admin/categories/new" for ::1 at 2023-07-20 23:26:56 +0800
+Processing by Admin::CategoriesController#new as HTML
+  Rendering layout admin/layouts/admin.html.erb
+  Rendering admin/categories/new.html.erb within admin/layouts/admin
+  Rendered admin/categories/new.html.erb within admin/layouts/admin (Duration: 7.3ms | Allocations: 4861)
+  Rendered layout admin/layouts/admin.html.erb (Duration: 8.1ms | Allocations: 4938)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 5240)
+
+
+  
+ActionView::Template::Error (undefined method `categories_path' for #<ActionView::Base:0x00000000014e60>
+
+              recipient.public_send(method, *args, options)
+                       ^^^^^^^^^^^^):
+     9:     </div>
+    10: <% end %>
+    11: 
+    12: <%= form_with model:@category do |form| %>
+    13:     <div class="mb-3">
+    14:         <%= form.label "所属分类",class:"form-label" %><br/>
+    15:         <select name="category[ancestry]" class="form-select" aria-label="Default select example">
+  
+app/views/admin/categories/new.html.erb:12
+Started GET "/admin/categories/new" for ::1 at 2023-07-20 23:28:14 +0800
+Processing by Admin::CategoriesController#new as HTML
+  Rendering layout admin/layouts/admin.html.erb
+  Rendering admin/categories/new.html.erb within admin/layouts/admin
+  Rendered admin/categories/new.html.erb within admin/layouts/admin (Duration: 7.5ms | Allocations: 5334)
+  Rendered layout admin/layouts/admin.html.erb (Duration: 8.7ms | Allocations: 5421)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 6307)
+
+
+  
+ActionView::Template::Error (undefined method `categories_path' for #<ActionView::Base:0x00000000015180>
+
+              recipient.public_send(method, *args, options)
+                       ^^^^^^^^^^^^):
+     9:     </div>
+    10: <% end %>
+    11: 
+    12: <%= form_with model: @category do |form| %>
+    13:     <div class="mb-3">
+    14:         <%= form.label "所属分类",class:"form-label" %><br/>
+    15:         <select name="category[ancestry]" class="form-select" aria-label="Default select example">
+  
+app/views/admin/categories/new.html.erb:12
+Started GET "/admin/categories/new" for ::1 at 2023-07-20 23:30:35 +0800
+Processing by Admin::CategoriesController#new as HTML
+  Rendering layout admin/layouts/admin.html.erb
+  Rendering admin/categories/new.html.erb within admin/layouts/admin
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL ORDER BY "categories"."id" DESC[0m
+  ↳ app/views/admin/categories/new.html.erb:17
+  Rendered admin/categories/new.html.erb within admin/layouts/admin (Duration: 114.2ms | Allocations: 11436)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/layouts/_navigation.html.erb:15
+  Rendered admin/layouts/_navigation.html.erb (Duration: 2.7ms | Allocations: 1117)
+  Rendered layout admin/layouts/admin.html.erb (Duration: 142.0ms | Allocations: 19719)
+Completed 200 OK in 147ms (Views: 143.7ms | ActiveRecord: 0.6ms | Allocations: 20688)
+
+
+Started POST "/admin/categories" for ::1 at 2023-07-20 23:31:16 +0800
+Processing by Admin::CategoriesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "category"=>{"ancestry"=>"1", "title"=>"test33", "weight"=>"7"}, "commit"=>"创建"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1674)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass
+
+    if @category.save
+                ^^^^^):
+  
+app/controllers/admin/categories_controller.rb:14:in `create'
+Started POST "/admin/categories" for ::1 at 2023-07-20 23:34:30 +0800
+Processing by Admin::CategoriesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "category"=>{"ancestry"=>"", "title"=>"test33", "weight"=>"7"}, "commit"=>"创建"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1473)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass
+
+    if @category.save
+                ^^^^^):
+  
+app/controllers/admin/categories_controller.rb:14:in `create'
+Started GET "/admin/categories/new" for ::1 at 2023-07-20 23:43:18 +0800
+Processing by Admin::CategoriesController#new as HTML
+  Rendering layout admin/layouts/admin.html.erb
+  Rendering admin/categories/new.html.erb within admin/layouts/admin
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL ORDER BY "categories"."id" DESC[0m
+  ↳ app/views/admin/categories/new.html.erb:17
+  Rendered admin/categories/new.html.erb within admin/layouts/admin (Duration: 3.0ms | Allocations: 2042)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/layouts/_navigation.html.erb:15
+  Rendered admin/layouts/_navigation.html.erb (Duration: 10.4ms | Allocations: 7683)
+  Rendered layout admin/layouts/admin.html.erb (Duration: 69.3ms | Allocations: 36708)
+Completed 200 OK in 82ms (Views: 70.5ms | ActiveRecord: 0.7ms | Allocations: 41625)
+
+
+Started POST "/admin/categories" for ::1 at 2023-07-20 23:43:24 +0800
+Processing by Admin::CategoriesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "category"=>{"ancestry"=>"", "title"=>"test33", "weight"=>"0"}, "commit"=>"创建"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1661)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass
+
+    if @category.save
+                ^^^^^):
+  
+app/controllers/admin/categories_controller.rb:14:in `create'
+Started POST "/admin/categories" for ::1 at 2023-07-20 23:44:50 +0800
+Processing by Admin::CategoriesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "category"=>{"ancestry"=>"", "title"=>"test33", "weight"=>"0"}, "commit"=>"创建"}
+  Rendering layout admin/layouts/admin.html.erb
+  Rendering admin/categories/new.html.erb within admin/layouts/admin
+  Rendered admin/categories/new.html.erb within admin/layouts/admin (Duration: 1.6ms | Allocations: 2530)
+  Rendered layout admin/layouts/admin.html.erb (Duration: 2.7ms | Allocations: 2616)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.8ms | Allocations: 8829)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass
+
+'.freeze;             @root_categories.each do |category| 
+                                      ^^^^^):
+    14:         <%= form.label "所属分类",class:"form-label" %><br/>
+    15:         <select name="category[ancestry]" class="form-select" aria-label="Default select example">
+    16:             <option ></option>
+    17:             <% @root_categories.each do |category| %>
+    18:                 <% next if category.id == @category.id %>
+    19:                 <option value="<%= category.id %>"  <%= @category.ancestry == category.id.to_s ? 'selected':'' %>><%= category.title %></option>
+    20:             <% end %>
+  
+app/views/admin/categories/new.html.erb:17
+app/views/admin/categories/new.html.erb:12
+app/controllers/admin/categories_controller.rb:18:in `create'
+Started POST "/admin/categories" for ::1 at 2023-07-20 23:46:58 +0800
+Processing by Admin::CategoriesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "category"=>{"ancestry"=>"", "title"=>"test33", "weight"=>"0"}, "commit"=>"创建"}
+  Rendering layout admin/layouts/admin.html.erb
+  Rendering admin/categories/new.html.erb within admin/layouts/admin
+  Rendered admin/categories/new.html.erb within admin/layouts/admin (Duration: 2.0ms | Allocations: 2281)
+  Rendered layout admin/layouts/admin.html.erb (Duration: 2.8ms | Allocations: 2358)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 3477)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass
+
+'.freeze;             @root_categories.each do |category| 
+                                      ^^^^^):
+    14:         <%= form.label "所属分类",class:"form-label" %><br/>
+    15:         <select name="category[ancestry]" class="form-select" aria-label="Default select example">
+    16:             <option ></option>
+    17:             <% @root_categories.each do |category| %>
+    18:                 <% next if category.id == @category.id %>
+    19:                 <option value="<%= category.id %>"  <%= @category.ancestry == category.id.to_s ? 'selected':'' %>><%= category.title %></option>
+    20:             <% end %>
+  
+app/views/admin/categories/new.html.erb:17
+app/views/admin/categories/new.html.erb:12
+app/controllers/admin/categories_controller.rb:18:in `create'
+Started GET "/admin/categories" for ::1 at 2023-07-20 23:47:42 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering layout admin/layouts/admin.html.erb
+  Rendering admin/categories/index.html.erb within admin/layouts/admin
+  [1m[36mCategory Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories" WHERE "categories"."ancestry" IS NULL[0m
+  ↳ app/views/admin/categories/index.html.erb:4
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL ORDER BY "categories"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/admin/categories/index.html.erb:25:in `each_with_index'
+  Rendered admin/categories/index.html.erb within admin/layouts/admin (Duration: 5.5ms | Allocations: 1887)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/layouts/_navigation.html.erb:15
+  Rendered admin/layouts/_navigation.html.erb (Duration: 108.1ms | Allocations: 16382)
+  Rendered layout admin/layouts/admin.html.erb (Duration: 171.4ms | Allocations: 45400)
+Completed 200 OK in 176ms (Views: 171.5ms | ActiveRecord: 1.1ms | Allocations: 46124)
+
+
+Started GET "/admin/categories/new" for ::1 at 2023-07-20 23:50:07 +0800
+Processing by Admin::CategoriesController#new as HTML
+  Rendering layout admin/layouts/admin.html.erb
+  Rendering admin/categories/new.html.erb within admin/layouts/admin
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL ORDER BY "categories"."id" DESC[0m
+  ↳ app/views/admin/categories/new.html.erb:17
+  Rendered admin/categories/new.html.erb within admin/layouts/admin (Duration: 3.5ms | Allocations: 1815)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/layouts/_navigation.html.erb:15
+  Rendered admin/layouts/_navigation.html.erb (Duration: 2.3ms | Allocations: 716)
+  Rendered layout admin/layouts/admin.html.erb (Duration: 31.3ms | Allocations: 9173)
+Completed 200 OK in 35ms (Views: 31.9ms | ActiveRecord: 0.4ms | Allocations: 9575)
+
+
+Started POST "/admin/categories" for ::1 at 2023-07-20 23:50:18 +0800
+Processing by Admin::CategoriesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "category"=>{"ancestry"=>"1", "title"=>"test33", "weight"=>"0"}, "commit"=>"创建"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admin/categories_controller.rb:14:in `create'
+  [1m[36mCategory Create (1.0ms)[0m  [1m[32mINSERT INTO "categories" ("title", "weight", "products_counter", "created_at", "updated_at", "ancestry") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "test33"], ["weight", 0], ["products_counter", 0], ["created_at", "2023-07-20 15:50:18.442894"], ["updated_at", "2023-07-20 15:50:18.442894"], ["ancestry", "1"]]
+  ↳ app/controllers/admin/categories_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admin/categories_controller.rb:14:in `create'
+Redirected to http://localhost:3000/admin/categories
+Completed 302 Found in 12ms (ActiveRecord: 2.6ms | Allocations: 3789)
+
+
+Started GET "/admin/categories" for ::1 at 2023-07-20 23:50:18 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering layout admin/layouts/admin.html.erb
+  Rendering admin/categories/index.html.erb within admin/layouts/admin
+  [1m[36mCategory Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories" WHERE "categories"."ancestry" IS NULL[0m
+  ↳ app/views/admin/categories/index.html.erb:4
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL ORDER BY "categories"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/admin/categories/index.html.erb:25:in `each_with_index'
+  Rendered admin/categories/index.html.erb within admin/layouts/admin (Duration: 4.7ms | Allocations: 1414)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/layouts/_navigation.html.erb:15
+  Rendered admin/layouts/_navigation.html.erb (Duration: 3.3ms | Allocations: 715)
+  Rendered layout admin/layouts/admin.html.erb (Duration: 33.8ms | Allocations: 8829)
+Completed 200 OK in 37ms (Views: 34.0ms | ActiveRecord: 0.6ms | Allocations: 9294)
+
+
+Started GET "/admin/categories" for ::1 at 2023-07-20 23:50:23 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering layout admin/layouts/admin.html.erb
+  Rendering admin/categories/index.html.erb within admin/layouts/admin
+  [1m[36mCategory Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories" WHERE "categories"."ancestry" IS NULL[0m
+  ↳ app/views/admin/categories/index.html.erb:4
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL ORDER BY "categories"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/admin/categories/index.html.erb:25:in `each_with_index'
+  Rendered admin/categories/index.html.erb within admin/layouts/admin (Duration: 3.4ms | Allocations: 1398)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/layouts/_navigation.html.erb:15
+  Rendered admin/layouts/_navigation.html.erb (Duration: 2.2ms | Allocations: 714)
+  Rendered layout admin/layouts/admin.html.erb (Duration: 28.8ms | Allocations: 8795)
+Completed 200 OK in 32ms (Views: 29.7ms | ActiveRecord: 0.4ms | Allocations: 9251)
+
+
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+Started GET "/admin/categories/new" for ::1 at 2023-07-20 23:51:35 +0800
+Processing by Admin::CategoriesController#new as HTML
+  Rendering layout admin/layouts/admin.html.erb
+  Rendering admin/categories/new.html.erb within admin/layouts/admin
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL ORDER BY "categories"."id" DESC[0m
+  ↳ app/views/admin/categories/new.html.erb:17
+  Rendered admin/categories/new.html.erb within admin/layouts/admin (Duration: 3.1ms | Allocations: 1592)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/layouts/_navigation.html.erb:15
+  Rendered admin/layouts/_navigation.html.erb (Duration: 2.5ms | Allocations: 714)
+  Rendered layout admin/layouts/admin.html.erb (Duration: 31.0ms | Allocations: 8832)
+Completed 200 OK in 34ms (Views: 31.9ms | ActiveRecord: 0.3ms | Allocations: 9158)
+
+
+Started POST "/admin/categories" for ::1 at 2023-07-20 23:51:44 +0800
+Processing by Admin::CategoriesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "category"=>{"ancestry"=>"1", "title"=>"test33", "weight"=>"0"}, "commit"=>"创建"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/admin/categories_controller.rb:14:in `create'
+  [1m[36mCategory Create (0.8ms)[0m  [1m[32mINSERT INTO "categories" ("title", "weight", "products_counter", "created_at", "updated_at", "ancestry") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "test33"], ["weight", 0], ["products_counter", 0], ["created_at", "2023-07-20 15:51:44.113024"], ["updated_at", "2023-07-20 15:51:44.113024"], ["ancestry", "1"]]
+  ↳ app/controllers/admin/categories_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/admin/categories_controller.rb:14:in `create'
+Redirected to http://localhost:3000/admin/categories
+Completed 302 Found in 11ms (ActiveRecord: 2.1ms | Allocations: 2272)
+
+
+Started GET "/admin/categories" for ::1 at 2023-07-20 23:51:44 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering layout admin/layouts/admin.html.erb
+  Rendering admin/categories/index.html.erb within admin/layouts/admin
+  [1m[36mCategory Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories" WHERE "categories"."ancestry" IS NULL[0m
+  ↳ app/views/admin/categories/index.html.erb:4
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL ORDER BY "categories"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/admin/categories/index.html.erb:25:in `each_with_index'
+  Rendered admin/categories/index.html.erb within admin/layouts/admin (Duration: 4.2ms | Allocations: 1398)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/layouts/_navigation.html.erb:15
+  Rendered admin/layouts/_navigation.html.erb (Duration: 3.0ms | Allocations: 715)
+  Rendered layout admin/layouts/admin.html.erb (Duration: 32.4ms | Allocations: 8793)
+Completed 200 OK in 36ms (Views: 33.4ms | ActiveRecord: 0.4ms | Allocations: 9248)
+
+
+Started GET "/admin/categories" for ::1 at 2023-07-20 23:51:58 +0800
+Processing by Admin::CategoriesController#index as HTML
+  Rendering layout admin/layouts/admin.html.erb
+  Rendering admin/categories/index.html.erb within admin/layouts/admin
+  [1m[36mCategory Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "categories" WHERE "categories"."ancestry" IS NULL[0m
+  ↳ app/views/admin/categories/index.html.erb:4
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL ORDER BY "categories"."id" DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/views/admin/categories/index.html.erb:25:in `each_with_index'
+  Rendered admin/categories/index.html.erb within admin/layouts/admin (Duration: 4.7ms | Allocations: 1398)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/layouts/_navigation.html.erb:15
+  Rendered admin/layouts/_navigation.html.erb (Duration: 3.5ms | Allocations: 714)
+  Rendered layout admin/layouts/admin.html.erb (Duration: 33.1ms | Allocations: 8795)
+Completed 200 OK in 36ms (Views: 33.1ms | ActiveRecord: 0.9ms | Allocations: 9251)
+
+
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+Started GET "/admin/categories/new" for ::1 at 2023-07-20 23:52:13 +0800
+Processing by Admin::CategoriesController#new as HTML
+  Rendering layout admin/layouts/admin.html.erb
+  Rendering admin/categories/new.html.erb within admin/layouts/admin
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."ancestry" IS NULL ORDER BY "categories"."id" DESC[0m
+  ↳ app/views/admin/categories/new.html.erb:17
+  Rendered admin/categories/new.html.erb within admin/layouts/admin (Duration: 3.0ms | Allocations: 1592)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/admin/layouts/_navigation.html.erb:15
+  Rendered admin/layouts/_navigation.html.erb (Duration: 2.0ms | Allocations: 714)
+  Rendered layout admin/layouts/admin.html.erb (Duration: 30.2ms | Allocations: 8832)
+Completed 200 OK in 33ms (Views: 30.7ms | ActiveRecord: 0.3ms | Allocations: 9158)
+
+
+Started POST "/admin/categories" for ::1 at 2023-07-20 23:52:20 +0800
+Processing by Admin::CategoriesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "category"=>{"ancestry"=>"", "title"=>"test777", "weight"=>"0"}, "commit"=>"创建"}
+  Rendering layout admin/layouts/admin.html.erb
+  Rendering admin/categories/new.html.erb within admin/layouts/admin
+  Rendered admin/categories/new.html.erb within admin/layouts/admin (Duration: 2.2ms | Allocations: 2311)
+  Rendered layout admin/layouts/admin.html.erb (Duration: 3.0ms | Allocations: 2388)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 3402)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass
+
+'.freeze;             @root_categories.each do |category| 
+                                      ^^^^^):
+    14:         <%= form.label "所属分类",class:"form-label" %><br/>
+    15:         <select name="category[ancestry]" class="form-select" aria-label="Default select example">
+    16:             <option ></option>
+    17:             <% @root_categories.each do |category| %>
+    18:                 <% next if category.id == @category.id %>
+    19:                 <option value="<%= category.id %>"  <%= @category.ancestry == category.id.to_s ? 'selected':'' %>><%= category.title %></option>
+    20:             <% end %>
+  
+app/views/admin/categories/new.html.erb:17
+app/views/admin/categories/new.html.erb:12
+app/controllers/admin/categories_controller.rb:18:in `create'

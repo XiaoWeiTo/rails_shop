@@ -84,3 +84,5 @@ gem "sorcery", "~> 0.16.5"
 gem "snow_flake", "~> 0.1.1"
 
 gem "ancestry", "~> 4.3"
+
+gem "will_paginate", "~> 4.0"

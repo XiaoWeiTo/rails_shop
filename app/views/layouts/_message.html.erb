@@ -1,0 +1,9 @@
+<% unless model.errors.empty? %>
+    <div class="alert alert-danger" role="alert">
+        <ul>
+        <% model.errors.messages.values.flatten.each do |msg| %>
+            <li><%= msg %></li>
+        <% end %>
+        </ul>
+    </div>
+<% end %>
