@@ -18,6 +18,7 @@
             <th scope="col">ID</th>
             <th scope="col">名称</th>
             <th scope="col">权重</th>
+            <th scope="col">子分类</th>
             <th scope="col"></th>
             </tr>
         </thead>
@@ -28,12 +29,13 @@
                     <td><%= category.id %></td>
                     <td><%= category.title %></td>
                     <td><%= category.weight %></td>
+                    <td><%= category.children.size %></td>
                     <td align="right">
                         <%= link_to "编辑",edit_admin_category_path(category) %>
                         <%= link_to "删除",admin_category_path(category),data:{
                             turbo_method: :delete,
                             turbo_confirm: "确认删除该条分类以及子分类？"
-                        }%>
+                        },method: :delete %>
                     </td>
                 </tr>
             <% end %>
