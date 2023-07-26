@@ -1,0 +1,49 @@
+<%= form_with(model: [:admin, product],url: (product.new_record? ? admin_products_path : admin_product_path(product))) do |form| %>
+    <div class="mb-3">
+        <%= form.label "所属分类",class:"form-label" %><br/>
+        <select name="product[category_id]" class="form-select" aria-label="Default select example">
+            <% @root_categories.each do |c| %>
+                <optgroup label="<%= c.title %>">
+                    <% c.children.each do |sub_category| %>
+                        <option value="<%= sub_category.id %>"  <%= !product.category.nil? && product.category.id == sub_category.id ? 'selected':'' %>><%= sub_category.title %></option>
+                    <% end %>
+                </optgroup>
+            <% end %>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <%= form.label "名称",class:"form-label" %><br/>
+        <%= form.text_field :title,class:"form-control" %>
+    </div>
+    <div class="mb-3">
+        <%= form.label "数量",class:"form-label" %><br/>
+        <%= form.number_field :amount,class:"form-control",step: 1 %>
+    </div>
+    <div class="mb-3">
+        <%= form.label "状态",class:"form-label" %><br/>
+        <select name="product[status]" class="form-select" aria-label="Default select example">
+            <% { Product::Status::On => "上架",Product::Status::Off => "下架" }.each do |k,v| %>
+                <option value="<%= k %>"  <%= product.status.to_sym == k ? 'selected':'' %>><%= v %></option>
+            <% end %>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <%= form.label "市场价",class:"form-label" %><br/>
+        <%= form.number_field :msrp,class:"form-control",step: 0.01 %>
+    </div>
+
+    <div class="mb-3">
+        <%= form.label "原价",class:"form-label" %><br/>
+        <%= form.number_field :price,class:"form-control",step: 0.01 %>
+    </div>
+
+    <div class="mb-3">
+        <%= form.label "描述",class:"form-label" %><br/>
+        <%= form.text_area  :description,class:"form-control",size:"10x5" %>
+    </div>
+    <div class="mb-3 d-flex justify-content-center">
+        <%= form.submit (product.new_record? ? "创建" : "修改"),class:"btn btn-primary btn-lg" %>
+    </div>
+<% end %>

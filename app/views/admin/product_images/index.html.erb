@@ -1,0 +1,20 @@
+<div>
+    <% @product_images.each do |image| %>
+        <%= image_tag image.image.variant(:thumb),class:"img-thumbnail" %>
+    <% end %>
+    
+</div>
+<div class="frame">
+	<div class="center">
+        <div class="title">
+			<h1>Drop file to upload</h1>
+		</div>
+        <%= form_with model: [:admin, @product, @product.product_images.build ] do |form| %>
+            <div class="dropzone">
+			    <img src="http://100dayscss.com/codepen/upload.svg" class="upload-icon" />
+                <%= form.file_field :image,class:"upload-input"  %>
+		    </div>
+            <%= form.submit "上传",class:"btn" %>
+        <% end %>
+	</div>
+</div>

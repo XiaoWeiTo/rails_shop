@@ -1,5 +1,5 @@
 class Category < ApplicationRecord
-    has_ancestry
+    has_ancestry orphan_strategy: :destroy
     has_many :products,dependent: :destroy
 
     validates_presence_of :title,message:"分类名称不能为空"
