@@ -1,0 +1,21 @@
+<div class="row">
+    <% products.each do |product| %>
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <%= link_to image_tag(product.main_product_image.image.variant(resize_to_limit: [128, 128]),alt: product.title),product_path(product) %>
+                <div class="caption">
+                    <h4><%= link_to product.title,product_path(product),class: "title" %></h4>
+                    <p>
+                        <strong>￥<%= product.price %></strong>
+                        <span class="msrp">￥<%= product.msrp %></span>
+                    </p>
+                    <p>
+                        <%= link_to "加入购物车","#",class:"btn btn-danger" %>
+                    </p>
+                </div>
+            </div>
+        </div>
+    <% end %>
+</div>
+
+<%= will_paginate @products %>

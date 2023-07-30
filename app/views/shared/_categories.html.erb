@@ -1,0 +1,10 @@
+<ul class="list-group">
+  <% categories.each do |root| %>
+    <li class="list-group-item"><%= root.first.title %></li>
+    <% root.last.each do |child| %>
+        <li class="list-group-item">
+            <%= link_to child.title,category_path(child) %>
+        </li>
+    <% end %>
+  <% end %>
+</ul>

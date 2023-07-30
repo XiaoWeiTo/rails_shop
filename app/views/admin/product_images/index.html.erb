@@ -1,20 +1,48 @@
-<div>
-    <% @product_images.each do |image| %>
-        <%= image_tag image.image.variant(:thumb),class:"img-thumbnail" %>
-    <% end %>
-    
-</div>
-<div class="frame">
-	<div class="center">
+<%= form_with model: [:admin, @product, @product.product_images.build ] do |form| %>
+    <div class="center">
         <div class="title">
 			<h1>Drop file to upload</h1>
 		</div>
-        <%= form_with model: [:admin, @product, @product.product_images.build ] do |form| %>
-            <div class="dropzone">
-			    <img src="http://100dayscss.com/codepen/upload.svg" class="upload-icon" />
-                <%= form.file_field :image,class:"upload-input"  %>
-		    </div>
-            <%= form.submit "上传",class:"btn" %>
-        <% end %>
-	</div>
-</div>
+        <div class="dropzone">
+			<img src="http://100dayscss.com/codepen/upload.svg" class="upload-icon" />
+            <%= form.file_field :image,class:"upload-input"  %>
+		</div>
+        <div>
+            <%= form.submit "上传",class:"btn_upload" %>
+        </div>
+    </div>
+<% end %>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">图片</th>
+      <th scope="col">权重</th>
+      <th scope="col">操作</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @product_images.each_with_index do |product_image,i| %>
+        <tr>
+        <th scope="row"><%= i+1 %></th>
+        <td>
+            <%= image_tag product_image.image.variant(:thumb),class:"img-thumbnail" %>
+        </td>
+        <td>
+            <%= form_with model:[:admin,@product,product_image],class:"form_with_inline"  do |form| %>
+                <%= form.number_field :weight,step: 1 %>
+                <%= form.submit "更新" %>
+            <% end %>
+        </td>
+        <td>
+            <%= link_to "删除",admin_product_product_image_path(@product,product_image),class:"",data:{turbo_method: :delete,turbo_confirm: "确认删除该图片？"} %>
+        </td>
+        </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= will_paginate @product_images %>
+
+
+

@@ -1,0 +1,45 @@
+<div class="row">
+    <div class="col-lg-3">
+        <%= render "shared/categories",categories: @categories %>
+    </div>
+
+    <div class="col-lg-9">
+        <ol class="breadcrumb">
+            <%= link_to "Home",root_path,class: "breadcrumb-item" %>
+            <%= link_to @category.root.title,category_path(@category),class: "breadcrumb-item active" %>
+            <%= link_to @category.title,category_path(@category),class: "breadcrumb-item active" %>
+        </ol>
+        <h1><%= @product.title %></h1>
+        <div class="row">
+            <% @product.product_images.each do |product_image| %>
+                <div class="col-xs-6 col-md-3">
+                    <%= image_tag product_image.image.representation(resize_to_limit: [200, 200]) %>
+                </div>
+            <% end%>
+        </div>
+
+        <ul class="list-unstyled">
+            <li>商品编号: <%= @product.uuid %></li>
+            <li>库存:<%= @product.amount %></li>
+        </ul>
+
+        <h3>
+            <strong>￥<%= @product.price %></strong>
+            <span class="msrp">￥<%= @product.msrp %></span>
+        </h3>
+
+        <p>
+            <%= link_to "加入购物车","#",class:"btn btn-danger" %>
+        </p>
+
+        <br/>
+        <br/>
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active">商品描述</li>
+        </ul>
+        <br/>
+        <div>
+            <%= @product.description.html_safe %>
+        </div>
+    </div>
+</div>

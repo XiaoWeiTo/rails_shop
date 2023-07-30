@@ -2,6 +2,7 @@ class Product < ApplicationRecord
     belongs_to :category
     before_create :set_default_uuid
     has_many :product_images
+    has_one :main_product_image, -> { order(weight: :desc) },class_name: :ProductImage
 
     validates :category_id, presence: { message: "分类不能为空" }
     validates :title, presence: { message: "产品名称不能为空"}
@@ -13,6 +14,8 @@ class Product < ApplicationRecord
     validates :amount,presence: { message: "数量不能为空" }
     validates :amount,numericality: { only_integer: true, message: "数量只能是整数" },if: Proc.new { |product| !product.amount.blank? }
     validates :amount,numericality: { greater_than_or_equal_to: 0, message: "数量必须大于等于0" },if: Proc.new { |product| !product.amount.blank? }
+
+    scope :onshelf,-> { where(status: Status::On) }
 
     module Status
         On = :on

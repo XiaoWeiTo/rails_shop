@@ -8,12 +8,15 @@ Rails.application.routes.draw do
   resources :users
   resources :sessions
 
+  resources :products,only: [:show]
+  resources :categories,only: [:show]
+
   namespace :admin do
     root 'sessions#new'
     resources :sessions
     resources :categories
     resources :products do
-      resources :product_images,only: [:index,:create,:destroy]
+      resources :product_images,only: [:index,:create,:destroy,:update,:edit]
     end
   end
 end
