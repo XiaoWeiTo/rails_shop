@@ -7,11 +7,15 @@
 }
 
 .thumbnail {
-    height: 290px;
+    height: 240px;
+    margin-bottom: 10px;
     &.detail{
         height: auto;
     }
     a.title{
         color: #333;
     }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }

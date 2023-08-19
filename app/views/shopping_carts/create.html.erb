@@ -1,0 +1,26 @@
+<div class="modal fade" id="shopping_cart_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">购物车</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h4 class="text text-success"><i class="fa fa-check-circle-0"></i>加入购物车成功</h4>
+        <div class="media">
+            <div class="media-left">
+                <%= link_to image_tag(@product.main_product_image.image.variant(resize_to_limit: [128, 128]),alt: @product.title),product_path(@product) %>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading"><%= @product.title %></h4>
+                数量: <%= @shopping_cart.amount %>
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">继续购物</button>
+        <%= link_to "查看购物车",shopping_carts_path,class:"btn btn-primary" %>
+      </div>
+    </div>
+  </div>
+</div>

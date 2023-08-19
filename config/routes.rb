@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   resources :products,only: [:show]
   resources :categories,only: [:show]
+  resources :shopping_carts,only: [:index, :create, :update, :destroy]
+
 
   namespace :admin do
     root 'sessions#new'

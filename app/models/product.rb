@@ -16,7 +16,9 @@ class Product < ApplicationRecord
     validates :amount,numericality: { greater_than_or_equal_to: 0, message: "数量必须大于等于0" },if: Proc.new { |product| !product.amount.blank? }
 
     scope :onshelf,-> { where(status: Status::On) }
+    scope :lowprice,-> { where("price < 1000")}
 
+    # default_scope {where("price < 1000")}
     module Status
         On = :on
         Off = :off

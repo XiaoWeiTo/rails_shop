@@ -6,6 +6,7 @@ class SessionsController < ApplicationController
 
     def create
        if user = login(params[:email],params[:password])
+        update_session_and_cookies_uuid user.uuid
         flash[:notice] = "登录成功"
         redirect_to root_path
         

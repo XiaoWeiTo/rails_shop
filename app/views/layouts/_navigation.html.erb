@@ -7,7 +7,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">首页</a>
+          <%= link_to "首页",root_path,class:"nav-link" %>
         </li>
         <li class="nav-item">
           <%= link_to "产品",admin_products_path,class:"nav-link" %>
@@ -21,6 +21,7 @@
       </ul>
 
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <%= link_to "购物车(#{@shopping_carts_count})",shopping_carts_path,class:"nav-link" %>
         <% unless logged_in? %>
             <li class="nav-item">
             <%= link_to "注册",new_user_path,class:"nav-link" %>
@@ -31,7 +32,6 @@
         <% else %>
             <li class="nav-item">
                 <a class="nav-link" href="#">欢迎你,<%= current_user.username %></a>
-                
             </li>
             <li class="nav-item">
                 <%= link_to "退出",session_url(current_user),class:"nav-link",
