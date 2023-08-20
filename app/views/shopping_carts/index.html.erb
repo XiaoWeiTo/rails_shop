@@ -6,23 +6,26 @@
             <% unless @shopping_carts.empty? %>
                 <% @shopping_carts.each do |shopping_cart| %>
                     <div class="media shopping-cart-row">
-                        <div class="media-left">
-                            <%= link_to image_tag(shopping_cart.product.main_product_image.image.variant(resize_to_limit: [128, 128]),alt: shopping_cart.product.title),product_path(shopping_cart.product) %>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">
-                                <%= link_to shopping_cart.product.title,product_path(shopping_cart.product) %>
-                                数量:<%= shopping_cart.amount %> 价格:￥<%= shopping_cart.amount * shopping_cart.product.price %>
-                            </h4>
+                        <div>
+                            <div class="media-left">
+                                <%= link_to image_tag(shopping_cart.product.main_product_image.image.variant(resize_to_limit: [128, 128]),alt: shopping_cart.product.title),product_path(shopping_cart.product) %>
+                            </div>
+                            <div class="media-body">
+                                <h5 class="media-heading">
+                                    <%= link_to shopping_cart.product.title,product_path(shopping_cart.product) %>
+                                    数量:<%= shopping_cart.amount %> 价格:￥<%= shopping_cart.amount * shopping_cart.product.price %>
+                                </h5>
+                            </div>
                         </div>
                         <div class="media-right">
                             <%= form_with model:shopping_cart do |form| %>
-                                <p><%=form.number_field :amount %></p>
+                                <p><%=form.number_field :amount,class:"form-control" %></p>
                                 <p>
-                                    <%=form.submit "更新" %>
+                                    <%=form.submit "更新",class:"btn btn-primary btn-sm" %>
+                                    <%= link_to "删除",shopping_cart_path(shopping_cart),class:"btn btn-danger btn-sm",data:{turbo_method: :delete,turbo_confirm: "确定要删除吗？"}%>
                                 </p>
                             <% end %>
-                            <%= link_to "删除",shopping_cart_path(shopping_cart),data:{turbo_method: :delete,turbo_confirm: "确定要删除吗？"}%>
+                            
                         </div>
                     </div>
                 <% end %>

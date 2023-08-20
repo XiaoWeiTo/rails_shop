@@ -1,5 +1,7 @@
 $(document).ready(() => {
-    $('.add-to-cart-btn').on('click', function () {
+    console.log("home load")
+    $(document).on('click','.add-to-cart-btn', function (event) {
+        console.log("button")
         event.preventDefault();
 
         let amount = $('input[name="amount"]')
@@ -19,7 +21,7 @@ $(document).ready(() => {
             },
             url: event.target.href,
             method: 'post',
-            // dataType: 'json',
+            dataType: 'html',
             contentType: 'application/json',
             data: JSON.stringify({ product_id: $(this).data('product-id'), amount: amount.val() ? amount.val() : 0 }),
             beforeSend: () => {

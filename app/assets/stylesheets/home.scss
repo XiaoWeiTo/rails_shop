@@ -19,3 +19,22 @@
     flex-direction: column;
     justify-content: space-around;
 }
+
+.media {
+    &.shopping-cart-row {
+        border-bottom: 1px solid #ccc;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        &:last-child{
+            border-bottom: 0;
+        }
+        
+    }
+}
+
+a.add-to-cart-btn {
+    i {
+        display: none;
+    }
+}
