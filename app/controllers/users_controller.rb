@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
     def new
+        fetch_home_data
         @user = User.new
     end
 

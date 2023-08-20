@@ -33,7 +33,7 @@ $(document).ready(() => {
             },
             success: data => {
                 // alert("success")
-                console.log("success", data)
+                // console.log("success", data)
                 if ($("#shopping_cart_modal").length > 0) {
                     $("#shopping_cart_modal").remove();
                 }

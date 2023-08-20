@@ -11,7 +11,8 @@ class ApplicationController < ActionController::Base
 
     def set_browser_uuid
         uuid = cookies[:user_uuid]
-        unless uuid
+        
+        if !uuid || uuid.empty?
             if logged_in?
                 uuid = current_user.uuid
             else

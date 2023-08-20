@@ -95,3 +95,5 @@ gem "will_paginate", "~> 4.0"
 
 #gem "mimemagic", "~> 0.3.6"
 
+
+gem "byebug", "~> 11.1", :groups => [:development, :test]

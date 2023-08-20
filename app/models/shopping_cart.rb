@@ -16,7 +16,6 @@ class ShoppingCart < ApplicationRecord
 
         record = where(cond).first
         if record
-            
             record.update(options.merge(amount: record.amount + options[:amount]))
         else
             record = create(options)
