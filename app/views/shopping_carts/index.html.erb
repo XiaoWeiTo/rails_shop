@@ -6,14 +6,14 @@
             <% unless @shopping_carts.empty? %>
                 <% @shopping_carts.each do |shopping_cart| %>
                     <div class="media shopping-cart-row">
-                        <div>
+                        <div class="media-content">
                             <div class="media-left">
                                 <%= link_to image_tag(shopping_cart.product.main_product_image.image.variant(resize_to_limit: [128, 128]),alt: shopping_cart.product.title),product_path(shopping_cart.product) %>
                             </div>
                             <div class="media-body">
                                 <h5 class="media-heading">
-                                    <%= link_to shopping_cart.product.title,product_path(shopping_cart.product) %>
-                                    数量:<%= shopping_cart.amount %> 价格:￥<%= shopping_cart.amount * shopping_cart.product.price %>
+                                    <p><%= link_to shopping_cart.product.title,product_path(shopping_cart.product) %></p>
+                                    <p>数量:<%= shopping_cart.amount %> 价格:￥<%= shopping_cart.amount * shopping_cart.product.price %></p>
                                 </h5>
                             </div>
                         </div>
@@ -37,7 +37,7 @@
         <div class="pull-right">
             <strong>总价:￥<%= @shopping_carts.sum {|cart|  cart.amount * cart.product.price }%></strong>
             &nbsp;
-            <%= link_to "结算","#",class:"btn btn-danger"%>
+            <%= link_to "结算",new_order_path,class:"btn btn-danger"%>
         </div>
         <div class="clearfix"></div>
     </div>

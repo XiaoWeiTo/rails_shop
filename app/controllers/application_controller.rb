@@ -25,4 +25,11 @@ class ApplicationController < ActionController::Base
     def update_session_and_cookies_uuid uuid
         session[:user_uuid] = cookies[:user_uuid] = uuid
     end
+
+    def auth_user
+        unless logged_in?
+            flash[:notice] = "请先登录"
+            redirect_to new_session_path
+        end
+    end
 end
